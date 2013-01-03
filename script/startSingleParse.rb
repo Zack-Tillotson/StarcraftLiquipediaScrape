@@ -1,2 +1,5 @@
-require_relative '../src/parse/SingleElimBracketParser.rb'
-parser = SingleElimBracketParser.new('data/mlgspringobwseeds.txt')
+#!/usr/bin/env ruby
+$LOAD_PATH << './lib'
+require 'parse/SingleElimBracketParser.rb'
+
+parser = StarcraftLiquipediaScrape::SingleElimBracketParser.new('mlgspringobwseeds', 'data/mlgspringobwseeds.txt')
