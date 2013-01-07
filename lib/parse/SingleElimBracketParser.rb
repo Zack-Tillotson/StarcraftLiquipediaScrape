@@ -1,4 +1,5 @@
 require 'upload/Set'
+require 'upload/SetUploader'
 
 module StarcraftLiquipediaScrape
   class SingleElimBracketParser
@@ -22,7 +23,7 @@ module StarcraftLiquipediaScrape
         line = line.gsub(/ */, '')
 
         # Ignore lines we don't care about
-        if / *\{\{/.match(line) or /^ *<!--/.match(line) or /^ *\}\}/.match(line)
+        if / *\{\{/.match(line) or /^ *<!--/.match(line) or /^ *\}\}/.match(line) or !/R[0-9]+[A-Z][0-9]+/.match(line)
           next
         end
 
@@ -34,7 +35,6 @@ module StarcraftLiquipediaScrape
 
         # Each line will have attibutes separated by bars
         line.split("|").each do |pev|
-
           pev.scan(/^R[0-9]+[A-Z][0-9]+(.*)=(.*)$/) do |attr, val|
 
             attr = "name" if attr == nil or attr.length() == 0
@@ -50,8 +50,9 @@ module StarcraftLiquipediaScrape
       end
       
       # Save the game objects
-      games.each_pair do |gid, set|
-        puts "#{gid} => #{set}"
+      uploader = StarcraftLiquipediaScrape::SetUploader.new()
+      games.each_pair do |key, game|
+        uploader.upload(game)
       end
 
     end

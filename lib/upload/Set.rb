@@ -12,7 +12,7 @@ module StarcraftLiquipediaScrape
     end 
     
     def set_attr(is_player_one, attr, value)
-      p = 
+      player = 
         if is_player_one
           @p1
         else
@@ -20,13 +20,13 @@ module StarcraftLiquipediaScrape
         end
       case attr
         when "name"
-          p.name = value
+          player.name = value
         when "race"
-          p.race = value
+          player.race = value
         when "score"
-          p.score = value
+          player.score = value
         when "flag"
-          p.flag = value
+          player.flag = value
       end
     end
 
