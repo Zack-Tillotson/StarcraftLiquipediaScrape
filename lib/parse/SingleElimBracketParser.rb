@@ -34,16 +34,20 @@ module StarcraftLiquipediaScrape
       attrlist.each_pair do |k,v|
 
         k.scan(/(R[0-9]+W)([0-9]+)(.*)/) do |gid, gnum, attr|
-          gid = "#{gid}#{Integer(gnum) / 2}"
+          gid = "#{gid}#{(Integer(gnum)+1) / 2}"
           attr = "name" if attr == nil or attr.length() == 0
+          v = v.gsub("'", "")
 
           games[gid] = StarcraftLiquipediaScrape::Set.new(@eventid, gid) if !games.has_key?(gid) 
-          games[gid].set_attr(1- Integer(gnum) % 2, attr, v)
+          games[gid].set_attr(1 - Integer(gnum) % 2, attr, v)
 
         end
       end 
 
       # Save the game objects
+      games.each_pair do |gid, set|
+        puts "#{gid} => #{set}"
+      end
       
     end
 

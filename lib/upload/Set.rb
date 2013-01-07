@@ -12,7 +12,6 @@ module StarcraftLiquipediaScrape
     end 
     
     def set_attr(player, attr, value)
-      puts "#{@event}-#{@gameid} - Setting #{attr} to #{value}"
       p = 
         if player == 0
           @p1
@@ -29,6 +28,10 @@ module StarcraftLiquipediaScrape
         when "flag"
           p.flag = value
       end
+    end
+
+    def to_s()
+      "#{@event}, #{@gameid}, P1 #{@p1}, P2 #{@p2}"
     end
 
   end

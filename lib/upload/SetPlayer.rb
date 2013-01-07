@@ -3,6 +3,17 @@ module StarcraftLiquipediaScrape
     def initialize()
     end
 
+    def race
+      @race
+    end
+
+    def name
+      @name
+    end
+    def score
+      @score
+    end
+
     def race=(v)
       @race = v
     end
@@ -20,7 +31,7 @@ module StarcraftLiquipediaScrape
     end
 
     def to_s()
-      "#Player #{@id} #{@race}"
+      "SetPlayer #{@name} #{@race} #{@score} #{@flag}"
     end
   end
 end
