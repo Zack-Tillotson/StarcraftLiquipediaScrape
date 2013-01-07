@@ -11,9 +11,9 @@ module StarcraftLiquipediaScrape
       @p2 = SetPlayer.new
     end 
     
-    def set_attr(player, attr, value)
+    def set_attr(is_player_one, attr, value)
       p = 
-        if player == 0
+        if is_player_one
           @p1
         else
           @p2

@@ -13,42 +13,47 @@ module StarcraftLiquipediaScrape
 
     def parse()
 
-      # Get and clean up the data string
-      txt = File.read(@filename)
-
-      txt = txt.gsub(/\n|\r/, '')
-      txt = txt.gsub(/\{\{ *[^ \<]* */, '')
-      txt = txt.gsub(/\}\} */, '')
-      txt = txt.gsub(/\<!--.*?--\>/, '')
-      txt = txt.gsub(/\| *?/, '|').gsub(/ *?\|/, '|')
-
-      # Split the data string into a collection of attributes
-      attrlist = Hash.new 
-      txt.split('|').collect { |v|
-        v =~ /=/
-        attrlist[$`] = $' if $` != nil
-      }
-
-      # Roll the attributes into game objects
       games = Hash.new
-      attrlist.each_pair do |k,v|
+      game_line_no = 0
 
-        k.scan(/(R[0-9]+W)([0-9]+)(.*)/) do |gid, gnum, attr|
-          gid = "#{gid}#{(Integer(gnum)+1) / 2}"
-          attr = "name" if attr == nil or attr.length() == 0
-          v = v.gsub("'", "")
+      f = File.open(@filename)
+      f.each do |line|
 
-          games[gid] = StarcraftLiquipediaScrape::Set.new(@eventid, gid) if !games.has_key?(gid) 
-          games[gid].set_attr(1 - Integer(gnum) % 2, attr, v)
+        line = line.gsub(/ */, '')
 
+        # Ignore lines we don't care about
+        if / *\{\{/.match(line) or /^ *<!--/.match(line) or /^ *\}\}/.match(line)
+          next
         end
-      end 
 
+        # Every two lines should be a new game
+        gameno = game_line_no / 2
+        playerno = game_line_no % 2 == 0
+
+        games[gameno] = StarcraftLiquipediaScrape::Set.new(@eventid, "#{gameno}") if !games.has_key?(gameno) 
+
+        # Each line will have attibutes separated by bars
+        line.split("|").each do |pev|
+
+          pev.scan(/^R[0-9]+[A-Z][0-9]+(.*)=(.*)$/) do |attr, val|
+
+            attr = "name" if attr == nil or attr.length() == 0
+            val = val.gsub("'", "")
+
+            games[gameno].set_attr(playerno, attr, val)
+
+          end
+        end 
+
+        game_line_no = game_line_no + 1
+
+      end
+      
       # Save the game objects
       games.each_pair do |gid, set|
         puts "#{gid} => #{set}"
       end
-      
+
     end
 
   end
