@@ -3,7 +3,7 @@ module StarcraftLiquipediaScrape
 
   class SetUploader
     def initialize()
-      @con = Mysql.new 'mysql.laowaigonewild.com', 'sclp', '', ''
+      @con = Mysql.new '', '', '', ''
       puts @con.get_server_info
     end
 
