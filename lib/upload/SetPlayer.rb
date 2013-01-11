@@ -10,8 +10,23 @@ module StarcraftLiquipediaScrape
     def name
       @name
     end
+
+    def flag
+      @flag
+    end
+
     def score
-      @score
+      begin
+        val = Integer(@score)
+      rescue
+        val =
+          if @score == "W"
+            1
+          else
+            0
+          end
+      end
+      val
     end
 
     def race=(v)

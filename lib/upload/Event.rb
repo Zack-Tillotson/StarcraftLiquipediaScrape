@@ -4,6 +4,10 @@ module StarcraftLiquipediaScrape
       @id = id
     end
 
+    def id
+      @id
+    end
+
     def to_s()
       "Event #{@id}"
     end

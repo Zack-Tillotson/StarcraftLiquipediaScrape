@@ -10,6 +10,22 @@ module StarcraftLiquipediaScrape
       @p1 = SetPlayer.new
       @p2 = SetPlayer.new
     end 
+
+    def p1
+      @p1
+    end
+    
+    def p2
+      @p2
+    end
+
+    def game_id
+      @gameid
+    end
+    
+    def event
+      @event
+    end
     
     def set_attr(is_player_one, attr, value)
       player = 
