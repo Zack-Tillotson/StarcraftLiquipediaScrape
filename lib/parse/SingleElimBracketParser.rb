@@ -12,18 +12,32 @@ module StarcraftLiquipediaScrape
 
     end
 
+    def can_parse_list
+          ["8SEBracket", "MLGSpringOWBSeeds", "16SEBracket", "32SEBracket", "64SEBracket", "MatchSummary|bestof=3", "MatchSummary|bestof=5", "MatchSummary|bestof=7", "MatchSummary|bestof=9"]
+    end
+
     def parse()
 
       games = Hash.new
       game_line_no = 0
+      can_parse = false
 
       f = File.open(@filename)
       f.each do |line|
 
         line = line.gsub(/ */, '')
 
-        # Ignore lines we don't care about
-        if / *\{\{/.match(line) or /^ *<!--/.match(line) or /^ *\}\}/.match(line) or !/R[0-9]+[A-Z][0-9]+/.match(line)
+        # Ignore comments and lines we don't care about
+        if / *\{\{(.*)$/.match(line)
+          inside_parse_item = true
+          can_parse = (can_parse_list().include? $1)
+        end 
+
+        if / *\}\}/.match(line)
+          inside_parse_item = false
+        end
+
+        if / *\{\{(.*)^/.match(line) or /^ *<!--/.match(line) or /^ *\}\}/.match(line) or !/R[0-9]+[A-Z][0-9]+/.match(line) or !can_parse
           next
         end
 
@@ -54,6 +68,7 @@ module StarcraftLiquipediaScrape
       games.each_pair do |key, game|
         uploader.upload(game)
       end
+      uploader.done()
 
     end
 
