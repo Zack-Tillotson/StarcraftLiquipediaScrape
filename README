@@ -4,7 +4,10 @@ Zack Tillotson
 Driver scripts in scripts/ directory, ruby code in src/, example data in data/.
 
 TODO
+* Scrape more data
+    * Map
+    * Game date
 * Support other game format
 * Get data from url
 * Find new pages automatically
-    http://wiki.teamliquid.net/starcraft2/Premier_Tournaments
+    * http://wiki.teamliquid.net/starcraft2/Premier_Tournaments
