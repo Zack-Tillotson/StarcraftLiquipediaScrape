@@ -13,7 +13,7 @@ module StarcraftLiquipediaScrape
     end
 
     def can_parse_list
-          ["8SEBracket", "MLGSpringOWBSeeds", "16SEBracket", "32SEBracket", "64SEBracket", "MatchSummary|bestof=3", "MatchSummary|bestof=5", "MatchSummary|bestof=7", "MatchSummary|bestof=9"]
+          ["4SEBracket", "6SEBracket", "8SEBracket", "MLGSpringOWBSeeds", "16SEBracket", "32SEBracket", "64SEBracket", "MatchSummary|bestof=3", "MatchSummary|bestof=5", "MatchSummary|bestof=7", "MatchSummary|bestof=9", "IPL5FinalBracket", "12SEBracket", "MLGSummerBracket/Groups", "MLGSummerBracket", "32DEBracket"]
     end
 
     def parse()
@@ -31,6 +31,9 @@ module StarcraftLiquipediaScrape
         if / *\{\{(.*)$/.match(line)
           inside_parse_item = true
           can_parse = (can_parse_list().include? $1)
+          if !can_parse
+            puts "Can't parse #{$1}"
+          end
         end 
 
         if / *\}\}/.match(line)

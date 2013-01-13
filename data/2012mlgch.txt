@@ -1,0 +1,287 @@
+===Championship Bracket===
+{{MLGSummerBracket
+<!-- Losers' Bracket --->
+|R1D1=MajOr |R1D1race=t  |R1D1flag=mx  |R1D1score=1
+|R1D2='''MC'''  |R1D2race=p  |R1D2flag=kr  |R1D2score=2
+|R1D3=StarDust  |R1D3race=p  |R1D3flag=kr  |R1D3score=1
+|R1D4='''Soulkey'''  |R1D4race=z  |R1D4flag=kr  |R1D4score=2
+|R1D5=Grubby  |R1D5race=p  |R1D5flag=nl  |R1D5score=1
+|R1D6='''jookTo'''  |R1D6race=z  |R1D6flag=kr  |R1D6score=2
+|R1D7='''Suppy'''  |R1D7race=z  |R1D7flag=us  |R1D7score=2*
+|R1D8=Ret  |R1D8race=z  |R1D8flag=nl  |R1D8score=0
+|R1D9=ViBE  |R1D9race=z  |R1D9flag=us  |R1D9score=1
+|R1D10='''HuK''' |R1D10race=p |R1D10flag=ca |R1D10score=2
+|R1D11=Apocalypse |R1D11race=t |R1D11flag=kr |R1D11score=0
+|R1D12='''HerO''' |R1D12race=p |R1D12flag=kr |R1D12score=2
+|R1D13='''First''' |R1D13race=p |R1D13flag=kr |R1D13score=2
+|R1D14=Insur |R1D14race=p |R1D14flag=us |R1D14score=0
+|R1D15='''Goswser''' |R1D15race=z |R1D15flag=us |R1D15score=2
+|R1D16=ThorZaIN |R1D16race=t |R1D16flag=se |R1D16score=1
+
+|R2D1='''TheStC''' |R2D1race=t |R2D1flag=kr |R2D1score=2
+|R2W1=MC |R2W1race=p |R2W1flag=kr |R2W1score=1
+|R2D2=IdrA |R2D2race=z |R2D2flag=us |R2D2score=0
+|R2W2='''Soulkey''' |R2W2race=z |R2W2flag=kr |R2W2score=2
+|R2D3=CranK |R2D3race=p |R2D3flag=kr |R2D3score=-
+|R2W3='''jookTo''' |R2W3race=z |R2W3flag=kr |R2W3score=W
+|R2D4=Revival |R2D4race=z |R2D4flag=kr |R2D4score=0
+|R2W4='''Suppy''' |R2W4race=z |R2W4flag=us |R2W4score=2
+|R2D5='''Daisy''' |R2D5race=p |R2D5flag=kr |R2D5score=2
+|R2W5=HuK |R2W5race=p |R2W5flag=ca |R2W5score=1
+|R2D6='''Scarlett''' |R2D6race=z |R2D6flag=ca |R2D6score=2
+|R2W6=HerO |R2W6race=p |R2W6flag=kr |R2W6score=1
+|R2D7='''San''' |R2D7race=p |R2D7flag=kr |R2D7score=2
+|R2W7=First |R2W7race=p |R2W7flag=kr |R2W7score=0
+|R2D8='''Polt''' |R2D8race=t |R2D8flag=kr |R2D8score=2
+|R2W8=Goswser |R2W8race=z |R2W8flag=us |R2W8score=1
+
+|R3W1=TheStC  |R3W1race=t  |R3W1flag=kr  |R3W1score=0
+|R3W2='''Soulkey'''  |R3W2race=z  |R3W2flag=kr |R3W2score=2
+|R3W3=jookTo  |R3W3race=z  |R3W3flag=kr  |R3W3score=1
+|R3W4='''Suppy'''  |R3W4race=z  |R3W4flag=us  |R3W4score=2
+|R3W5='''Daisy'''  |R3W5race=p  |R3W5flag=kr  |R3W5score=2
+|R3W6=Scarlett  |R3W6race=z  |R3W6flag=ca  |R3W6score=1
+|R3W7=San  |R3W7race=p  |R3W7flag=kr  |R3W7score=1
+|R3W8='''Polt'''  |R3W8race=t  |R3W8flag=kr  |R3W8score=2
+
+|R4D1=hyvaa |R4D1race=z |R4D1flag=kr |R4D1score=1
+|R4W1='''Soulkey''' |R4W1race=z |R4W1flag=kr |R4W1score=2
+|R4D2='''soO''' |R4D2race=z |R4D2flag=kr |R4D2score=2
+|R4W2=Suppy |R4W2race=z |R4W2flag=us |R4W2score=0
+|R4D3=mOOnGLaDe |R4D3race=z |R4D3flag=au |R4D3score=0
+|R4W3='''Daisy''' |R4W3race=p |R4W3flag=kr |R4W3score=2
+|R4D4=BabyKnight |R4D4race=p |R4D4flag=dk |R4D4score=0
+|R4W4='''Polt''' |R4W4race=t |R4W4flag=kr |R4W4score=2
+
+|R5D1=Golden |R5D1race=z |R5D1flag=kr |R5D1score=0
+|R5W1='''Soulkey''' |R5W1race=z |R5W1flag=kr |R5W1score=2
+|R5D2='''Rain''' |R5D2race=p |R5D2flag=kr |R5D2score=2
+|R5W2=soO |R5W2race=z |R5W2flag=kr |R5W2score=1
+|R5D3='''HwangSin''' |R5D3race=p |R5D3flag=kr |R5D3score=W
+|R5W3=Daisy |R5W3race=p |R5W3flag=kr |R5W3score=-
+|R5D4=viOLet |R5D4race=z |R5D4flag=kr |R5D4score=0
+|R5W4='''Polt''' |R5W4race=t |R5W4flag=kr |R5W4score=2
+
+|R6D1='''TaeJa''' |R6D1race=t |R6D1flag=kr |R6D1score=2
+|R6W1=Soulkey |R6W1race=z |R6W1flag=kr |R6W1score=0
+|R6D2=NaNiwa |R6D2race=p |R6D2flag=se |R6D2score=0
+|R6W2='''Rain''' |R6W2race=p |R6W2flag=kr |R6W2score=2
+|R6D3=Oz |R6D3race=p |R6D3flag=kr |R6D3score=0
+|R6W3='''HwangSin''' |R6W3race=p |R6W3flag=kr |R6W3score=2
+|R6D4='''Heart''' |R6D4race=t |R6D4flag=kr |R6D4score=2
+|R6W4=Polt |R6W4race=t |R6W4flag=kr |R6W4score=0
+
+<!-- Losers' Round 7--->
+|R7W1=TaeJa |R7W1race=t |R7W1flag=kr |R7W1score=0
+|R7W2='''Rain''' |R7W2race=p |R7W2flag=kr |R7W2score=2
+|R7W3=HwangSin |R7W3race=p |R7W3flag=kr |R7W3score=0
+|R7W4='''Heart''' |R7W4race=t |R7W4flag=kr |R7W4score=2
+
+<!-- #1 From Group Play--->
+|R8W1='''Leenock''' |R8W1race=z |R8W1flag=kr |R8W1score=2
+|R8W2=Bomber |R8W2race=t |R8W2flag=kr |R8W2score=0
+|R8W4=Life |R8W4race=z |R8W4flag=kr |R8W4score=0
+|R8W5='''Flash''' |R8W5race=t |R8W5flag=kr |R8W5score=2
+
+<!-- Losers' Final--->
+|R8D1='''Bomber''' |R8D1race=t |R8D1flag=kr |R8D1score=2
+|R8W3=Rain |R8W3race=p |R8W3flag=kr |R8W3score=0
+|R8D2='''Life''' |R8D2race=z |R8D2flag=kr |R8D2score=2
+|R8W6=Heart |R8W6race=t |R8W6flag=kr |R8W6score=0
+
+<!-- Semi-finals --->
+|R9W1='''Leenock''' |R9W1race=z |R9W1flag=kr |R9W1score={{es|4}}
+|R9W2=Bomber |R9W2race=t |R9W2flag=kr |R9W2score={{es|1}}
+|R9W3=Flash |R9W3race=t |R9W3flag=kr |R9W3score={{es|2}}
+|R9W4='''Life''' |R9W4race=z |R9W4flag=kr |R9W4score={{es|4}}
+
+<!-- Grand Final --->
+|R10W1=Leenock |R10W1race=z |R10W1flag=kr |R10W1score=3
+|R10W2='''Life''' |R10W2race=z |R10W2flag=kr |R10W2score=4
+}}
+*<div style="background:#FFCCFF; font-size:85%; line-height:125%;"> Note: The Semifinals are the only round where an Extended Series can occur during the Championship Bracket, due to results from previous stages of the tournament not being carried over.</div>
+*<div style="background:#FFCCFF; font-size:85%;" > Semifinal match: If the Player who came from the Losers Bracket wins the initial Match, the Match will expand to a Best of 7, include the initial Match, and pick up where that Match left off.</div>
+<nowiki>*</nowiki>Ret was 30 minutes late for his match. EG and MLG agreed to a 1 game penalty, instead of a forfeit.<ref>{{cite web|url=http://www.youtube.com/watch?v=x5imb8RS-4s#t=2m08s|title=EG.Suppy Interview @ MLG Dallas Day 3|publisher=YouTube.com|date=2012-11-04|author=TeamLiquidNet}}</ref>
+<noinclude>
+==References==
+{{Reflist}}</noinclude>
+===Group Play===
+{{Box|start|padding=5px}}
+====Group A====
+{{MLGSummerBracket/Groups
+|anchor=1
+<!-- WINNER'S BRACKET -->
+|R1D1='''Leenock'''|R1D1race=z|R1D1score=2 |R1D1flag=kr
+|R1D2=Rain|R1D2race=p|R1D2score=0 |R1D2flag=kr
+|R1D3=ViBE|R1D3race=z|R1D3score=0 |R1D3flag=us
+|R1D4='''San'''|R1D4race=p|R1D4score=2 |R1D4flag=kr
+|R1D5='''Oz'''|R1D5race=p|R1D5score=2 |R1D5flag=kr
+|R1D6=hyvaa|R1D6race=z|R1D6score=0 |R1D6flag=kr
+|R1D7=HerO|R1D7race=p|R1D7score=1 |R1D7flag=kr
+|R1D8='''Polt'''|R1D8race=t|R1D8score=2 |R1D8flag=kr
+
+|R2W1='''Leenock'''|R2W1race=z|R2W1score=2 |R2W1flag=kr
+|R2W2=San|R2W2race=p|R2W2score=1 |R2W2flag=kr
+|R2W3='''Oz'''|R2W3race=p|R2W3score=2 |R2W3flag=kr
+|R2W4=Polt|R2W4race=t|R2W4score=0 |R2W4flag=kr
+
+|R4W1=Leenock|R4W1race=z|R4W1score=1 |R4W1flag=kr
+|R4W2='''Oz'''|R4W2race=p|R4W2score=2 |R4W2flag=kr
+
+<!-- LOSER'S BRACKET -->
+|R1D9=ViBE|R1D9race=z |R1D9score=0  |R1D9flag=us
+|R1D10='''Rain'''|R1D10race=p|R1D10score=2 |R1D10flag=kr
+|R1D11=HerO|R1D11race=p|R1D11score=1 |R1D11flag=kr
+|R1D12='''hyvaa'''|R1D12race=z|R1D12score=2 |R1D12flag=kr
+
+|R2D1=Polt|R2D1race=t|R2D1score=0 |R2D1flag=kr
+|R2W5='''Rain'''|R2W5race=p|R2W5score=2 |R2W5flag=kr
+|R2D2=San|R2D2race=p|R2D2score=1 |R2D2flag=kr
+|R2W6='''hyvaa'''|R2W6race=z|R2W6score=2 |R2W6flag=kr
+
+|R3W1='''Rain'''|R3W1race=p|R3W1score=2 |R3W1flag=kr
+|R3W2=hyvaa|R3W2race=z|R3W2score=0 |R3W2flag=kr
+
+|R4D1='''Leenock'''|R4D1race=z|R4D1score={{es|4}} |R4D1flag=kr
+|R4W3=Rain|R4W3race=p|R4W3score={{es|2}} |R4W3flag=kr
+
+<!-- GRAND FINALS -->
+|R5W1=Oz|R5W1race=p|R5W1score={{es|2}} |R5W1flag=kr
+|R5W2='''Leenock'''|R5W2race=z|R5W2score={{es|4}} |R5W2flag=kr
+}}
+{{Box|break}}
+
+====Group B====
+{{MLGSummerBracket/Groups
+|anchor=2
+<!-- WINNER'S BRACKET -->
+|R1D1='''NaNiwa'''|R1D1race=p|R1D1score=2 |R1D1flag=se
+|R1D2=Ret|R1D2race=z|R1D2score=0 |R1D2flag=nl
+|R1D3=HwangSin|R1D3race=p|R1D3score=1 |R1D3flag=kr
+|R1D4='''BabyKnight'''|R1D4race=p|R1D4score=2 |R1D4flag=dk
+|R1D5=Grubby|R1D5race=p|R1D5score=0 |R1D5flag=nl
+|R1D6='''Flash'''|R1D6race=t|R1D6score=2 |R1D6flag=kr
+|R1D7=IdrA|R1D7race=z|R1D7score=1 |R1D7flag=us
+|R1D8='''TheStC'''|R1D8race=t|R1D8score=2 |R1D8flag=kr
+
+|R2W1='''NaNiwa'''|R2W1race=p|R2W1score=2 |R2W1flag=se
+|R2W2=BabyKnight|R2W2race=p|R2W2score=0 |R2W2flag=dk
+|R2W3='''Flash'''|R2W3race=t|R2W3score=2 |R2W3flag=kr
+|R2W4=TheStC|R2W4race=t|R2W4score=0 |R2W4flag=kr
+
+|R4W1='''NaNiwa'''|R4W1race=p|R4W1score=2 |R4W1flag=se
+|R4W2=Flash|R4W2race=t|R4W2score=1 |R4W2flag=kr
+
+<!-- LOSER'S BRACKET -->
+|R1D9=Grubby |R1D9race=p |R1D9score=0  |R1D9flag=nl
+|R1D10='''IdrA'''|R1D10race=z|R1D10score=2 |R1D10flag=us
+|R1D11=Ret|R1D11race=z|R1D11score=0 |R1D11flag=nl
+|R1D12='''HwangSin'''|R1D12race=p|R1D12score=2 |R1D12flag=kr
+
+|R2D1='''BabyKnight'''|R2D1race=p|R2D1score=2 |R2D1flag=dk
+|R2W5=IdrA|R2W5race=z|R2W5score=1 |R2W5flag=us
+|R2D2=TheStC|R2D2race=t|R2D2score=1 |R2D2flag=kr
+|R2W6='''HwangSin'''|R2W6race=p|R2W6score=2 |R2W6flag=kr
+
+|R3W1=BabyKnight|R3W1race=p|R3W1score={{es|2}} |R3W1flag=dk
+|R3W2='''HwangSin'''|R3W2race=p|R3W2score={{es|4}} |R3W2flag=kr
+
+|R4D1='''Flash'''|R4D1race=t|R4D1score=2 |R4D1flag=kr
+|R4W3=HwangSin|R4W3race=p|R4W3score=1 |R4W3flag=kr
+
+<!-- GRAND FINALS -->
+|R5W1=NaNiwa|R5W1race=p|R5W1score={{es|3}} |R5W1flag=se
+|R5W2='''Flash'''|R5W2race=t|R5W2score={{es|4}} |R5W2flag=kr
+}}
+{{Box|end}}{{Box|start|padding=5px}}
+
+====Group C====
+{{MLGSummerBracket/Groups
+|anchor=3
+<!-- WINNER'S BRACKET -->
+|R1D1='''viOLet'''|R1D1race=z|R1D1score=2 |R1D1flag=kr
+|R1D2=mOOnGLaDe|R1D2race=z|R1D2score=0 |R1D2flag=au
+|R1D3=MajOr|R1D3race=t|R1D3score=0 |R1D3flag=mx
+|R1D4='''Life'''|R1D4race=z|R1D4score=2 |R1D4flag=kr
+|R1D5='''Revival'''|R1D5race=z|R1D5score=2 |R1D5flag=kr
+|R1D6=Soulkey|R1D6race=z|R1D6score=1 |R1D6flag=kr
+|R1D7='''TaeJa'''|R1D7race=t|R1D7score=2 |R1D7flag=kr
+|R1D8=CranK|R1D8race=p|R1D8score=0 |R1D8flag=kr
+
+|R2W1=viOLet|R2W1race=z|R2W1score=1 |R2W1flag=kr
+|R2W2='''Life'''|R2W2race=z|R2W2score=2 |R2W2flag=kr
+|R2W3=Revival|R2W3race=z|R2W3score=1 |R2W3flag=kr
+|R2W4='''TaeJa'''|R2W4race=t|R2W4score=2 |R2W4flag=kr
+
+|R4W1='''Life'''|R4W1race=z|R4W1score=2 |R4W1flag=kr
+|R4W2=TaeJa|R4W2race=t|R4W2score=0 |R4W2flag=kr
+
+<!-- LOSER'S BRACKET -->
+|R1D9=MajOr |R1D9race=t |R1D9score=1  |R1D9flag=mx
+|R1D10='''mOOnGLaDe'''|R1D10race=z|R1D10score=2 |R1D10flag=au
+|R1D11='''CranK'''|R1D11race=p|R1D11score=2 |R1D11flag=kr
+|R1D12=Soulkey|R1D12race=z|R1D12score=1 |R1D12flag=kr
+
+|R2D1=Revival|R2D1race=z|R2D1score=1 |R2D1flag=kr
+|R2W5='''mOOnGLaDe'''|R2W5race=z|R2W5score=2 |R2W5flag=au
+|R2D2='''viOLet'''|R2D2race=z|R2D2score=2 |R2D2flag=kr
+|R2W6=CranK|R2W6race=p|R2W6score=0 |R2W6flag=kr
+
+|R3W1=mOOnGLaDe|R3W1race=z|R3W1score={{es|1}} |R3W1flag=au
+|R3W2='''viOLet'''|R3W2race=z|R3W2score={{es|4}} |R3W2flag=kr
+
+|R4D1='''TaeJa'''|R4D1race=t|R4D1score=2 |R4D1flag=kr
+|R4W3=viOLet|R4W3race=z|R4W3score=0 |R4W3flag=kr
+
+<!-- GRAND FINALS -->
+|R5W1='''Life'''|R5W1race=z|R5W1score={{es|4}} |R5W1flag=kr
+|R5W2=TaeJa|R5W2race=t|R5W2score={{es|0}} |R5W2flag=kr
+}}
+{{Box|break}}
+
+====Group D====
+{{MLGSummerBracket/Groups
+|anchor=4
+<!-- WINNER'S BRACKET -->
+|R1D1='''Heart'''|R1D1race=t|R1D1score=2 |R1D1flag=kr
+|R1D2=ThorZaIN|R1D2race=t|R1D2score=1 |R1D2flag=se
+|R1D3=Bomber|R1D3race=t|R1D3score=1 |R1D3flag=kr
+|R1D4='''Scarlett'''|R1D4race=z|R1D4score=2 |R1D4flag=ca
+|R1D5='''Daisy'''|R1D5race=p|R1D5score=2 |R1D5flag=kr
+|R1D6=soO|R1D6race=z|R1D6score=1 |R1D6flag=kr
+|R1D7=First|R1D7race=p|R1D7score=0 |R1D7flag=kr
+|R1D8='''Golden'''|R1D8race=z|R1D8score=2 |R1D8flag=kr
+
+|R2W1='''Heart'''|R2W1race=t|R2W1score=2 |R2W1flag=kr
+|R2W2=Scarlett|R2W2race=z|R2W2score=1 |R2W2flag=ca
+|R2W3=Daisy|R2W3race=p|R2W3score=1 |R2W3flag=kr
+|R2W4='''Golden'''|R2W4race=z|R2W4score=2 |R2W4flag=kr
+
+|R4W1='''Heart'''|R4W1race=t|R4W1score=2 |R4W1flag=kr
+|R4W2=Golden|R4W2race=Z|R4W2score=0 |R4W2flag=kr
+
+<!-- LOSER'S BRACKET -->
+|R1D9='''soO'''|R1D9race=z |R1D9score=2  |R1D9flag=kr
+|R1D10=First|R1D10race=p|R1D10score=1 |R1D10flag=kr
+|R1D11=ThorZaIN|R1D11race=t|R1D11score=0 |R1D11flag=se
+|R1D12='''Bomber'''|R1D12race=t|R1D12score=2 |R1D12flag=kr
+
+|R2D1=Scarlett|R2D1race=z|R2D1score=1 |R2D1flag=ca
+|R2W5='''soO'''|R2W5race=z|R2W5score=2 |R2W5flag=kr
+|R2D2=Daisy|R2D2race=p|R2D2score=1 |R2D2flag=kr
+|R2W6='''Bomber'''|R2W6race=t|R2W6score=2 |R2W6flag=kr
+
+|R3W1=soO|R3W1race=z|R3W1score=0 |R3W1flag=kr
+|R3W2='''Bomber'''|R3W2race=t|R3W2score=2 |R3W2flag=kr
+
+|R4D1=Golden|R4D1race=z|R4D1score=0 |R4D1flag=kr
+|R4W3='''Bomber'''|R4W3race=t|R4W3score=2 |R4W3flag=kr
+
+<!-- GRAND FINALS -->
+|R5W1=Heart|R5W1race=t|R5W1score=1 |R5W1flag=kr
+|R5W2='''Bomber'''|R5W2race=t|R5W2score=2 |R5W2flag=kr
+
+|R5W1score2={{es|2}}
+|R5W2score2={{es|4}}
+}}
+{{Box|end}}
