@@ -12,7 +12,7 @@ module StarcraftLiquipediaScrape
     end
 
     def flag
-      @flag
+      if @flag then @flag else "" end
     end
 
     def score
