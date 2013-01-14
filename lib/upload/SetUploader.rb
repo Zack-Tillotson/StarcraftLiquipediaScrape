@@ -3,7 +3,7 @@ module StarcraftLiquipediaScrape
 
   class SetUploader
     def initialize()
-      @con = Mysql.new
+      @con = Mysql.new 
     end
 
     def upload(set)

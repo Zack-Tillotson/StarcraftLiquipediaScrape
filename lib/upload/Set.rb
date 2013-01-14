@@ -4,12 +4,15 @@ require 'upload/Event'
 module StarcraftLiquipediaScrape
   class Set
 
-    def initialize(eventid, gameid)
-      @event = Event.new(eventid)
+    def initialize(gameid)
       @gameid = gameid
       @p1 = SetPlayer.new
       @p2 = SetPlayer.new
-    end 
+    end
+
+    def event=(event)
+      @event = event
+    end
 
     def p1
       @p1
