@@ -1,86 +1,53 @@
 require 'upload/Set'
 require 'upload/SetUploader'
 require 'parse/BracketParser'
+require 'parse/GroupParser'
 
 module StarcraftLiquipediaScrape
   class LiquipediaParser
 
-    def initialize(eventid, filename)
+    def initialize(event, filename)
 
-      @eventid = eventid
+      @event = event
       @filename = filename
       @games = Hash.new
 
       @parsers = Array.new
       @parsers.push StarcraftLiquipediaScrape::BracketParser.new
+      @parsers.push StarcraftLiquipediaScrape::GroupParser.new
 
       parse()
       save()
 
     end
 
-    def attempt_parsing(name, lines)
+    def attempt_parsing(lines)
       @parsers.each do |p|
-        if p.can_parse_list().include?(name)
-          puts "Parser says it can parse"
-          gs = p.parse(lines)
-          #TODO Merge with currently parsed games
-          @games = gs
-        end
+        gs = p.parse(lines)
+        puts "#{p.class}, #{gs.length}"
+        #TODO Merge with currently parsed games
+        @games = gs
+        save()
       end
     end
 
     def parse()
 
       item_lines = Array.new
-      item_name = ""
       inside_parse_item = false
 
       f = File.open(@filename)
       f.each do |line|
 
-        line = line.gsub(/ */, '')
+        line = line.gsub(/ +/, ' ')
+        line = line.gsub(/^ */, '')
+        line = line.gsub(/ *$/, '')
 
-        puts "   #{line}"
-
-        # An item starts with "{{<name>"
-        if /\{\{(.*)$/.match(line)
-          inside_parse_item = true
-          item_name = $1
-          puts "Inside parse item #{item_name}"
-        end 
-
-        # Make sure to save the last line if needed
-        if /([^\}]+)\}\}/.match(line)
-          item_lines.push $1
-        end
-        
-        # An item ends with "...}}"
-        if /\}\}/.match(line)
-          inside_parse_item = false
-          puts "Outside parse item"
-        end
-
-        # If done with the item send it to a parser and end
-        if !inside_parse_item and item_lines.length > 0
-          puts "Sending to parsers!"
-          attempt_parsing(item_name, item_lines) 
-          item_lines = Array.new
-        end
-
-        # Skip some lines we don't care about
-        if /\{\{/.match(line) or /<!--/.match(line) or /^ *$/.match(line)
-          puts "Skipping this line"
-          next
-        end
-
-        # Add this line to the end of the array
-        if inside_parse_item
-          puts "Adding to item_lines"
-          item_lines.push line
-        end
+        item_lines.push line
 
       end
+
+      attempt_parsing item_lines
       
     end
 
@@ -92,7 +59,7 @@ module StarcraftLiquipediaScrape
       # Save the game objects
       uploader = StarcraftLiquipediaScrape::SetUploader.new()
       @games.each_pair do |key, game|
-        game.event = Event.new @eventid
+        game.event = Event.new @event
         uploader.upload(game)
       end
       uploader.done()
