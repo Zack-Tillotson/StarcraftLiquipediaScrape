@@ -10,11 +10,12 @@ module StarcraftLiquipediaScrape
 
       @event = event
       @filename = filename
-      @games = Hash.new
 
       @parsers = Array.new
       @parsers.push StarcraftLiquipediaScrape::BracketParser.new
       @parsers.push StarcraftLiquipediaScrape::GroupParser.new
+
+      @games = Hash.new
 
       parse()
       save()
@@ -23,12 +24,16 @@ module StarcraftLiquipediaScrape
 
     def attempt_parsing(lines)
       @parsers.each do |p|
-        gs = p.parse(lines)
-        puts "#{p.class}, #{gs.length}"
-        #TODO Merge with currently parsed games
-        @games = gs
-        save()
+        games = p.parse(lines)
+        puts "#{p.class}, #{games.length}"
+        @games = merge_games(games)
       end
+    end
+
+    def merge_games(games)
+      
+      @games = @games.merge(games)
+
     end
 
     def parse()
@@ -39,9 +44,11 @@ module StarcraftLiquipediaScrape
       f = File.open(@filename)
       f.each do |line|
 
-        line = line.gsub(/ +/, ' ')
-        line = line.gsub(/^ */, '')
-        line = line.gsub(/ *$/, '')
+        line = line.gsub(/ +/, " ")
+        line = line.gsub(/^ */, "")
+        line = line.gsub(/ *$/, "")
+        line = line.gsub(/ *\|/, "|")
+        line = line.gsub(/\| */, "|")
 
         item_lines.push line
 

@@ -15,7 +15,7 @@ module StarcraftLiquipediaScrape
     def parse(lines)
 
       inside_parsable_item = false
-      parseable_items = Array.new
+      parsable_items = Array.new
 
       lines.each do |line|
 
@@ -26,12 +26,12 @@ module StarcraftLiquipediaScrape
           end
         end
         if found
-          inside_parseable_item = true
-          parseable_items = Array.new
+          inside_parsable_item = true
+          parsable_items = Array.new
           next
         end
 
-        if not inside_parseable_item
+        if not inside_parsable_item
           next
         end
 
@@ -41,15 +41,15 @@ module StarcraftLiquipediaScrape
 
         if /(.*)\}\}/.match(line)
           if not $1.empty?()
-            parseable_items.push $1
+            parsable_items.push $1
           end
-          parse_item(parseable_items)
-          inside_parseable_item = false
-          parseable_items = Array.new
+          parse_item(parsable_items)
+          inside_parsable_item = false
+          parsable_items = Array.new
           next
         end
 
-        parseable_items.push line
+        parsable_items.push line
 
       end
 
@@ -66,8 +66,6 @@ module StarcraftLiquipediaScrape
         if !/R[0-9]+[A-Z][0-9]+/.match(line)
           next
         end
-
-        puts line
 
         # Every two lines should be a new game
         gameno = game_line_no / 2

@@ -8,6 +8,7 @@ module StarcraftLiquipediaScrape
       @gameid = gameid
       @p1 = SetPlayer.new
       @p2 = SetPlayer.new
+      @map = ""
     end
 
     def event=(event)
@@ -28,6 +29,16 @@ module StarcraftLiquipediaScrape
     
     def event
       @event
+    end
+
+    def map
+      @map
+    end
+
+    def set_all_attrs(map, p1, p2)
+      @map = map
+      @p1 = p1
+      @p2 = p2
     end
     
     def set_attr(is_player_one, attr, value)
@@ -50,7 +61,7 @@ module StarcraftLiquipediaScrape
     end
 
     def to_s()
-      "#{@event}, #{@gameid}, P1 #{@p1}, P2 #{@p2}"
+      "#{@event}, #{@map}, #{@gameid}, P1 #{@p1}, P2 #{@p2}"
     end
 
   end

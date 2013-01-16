@@ -1,3 +1,4 @@
+=== Playoffs ===
 ==== Bracket ====
 {{16SEBracket
 <!-- NAME THE ROUNDS -->
@@ -5,38 +6,221 @@
 |R2=Quarterfinals (Bo3)
 |R3=Semifinals (Bo3)
 |R4=Finals (Bo5)
-<!-- ROUND OF 16 (Ro16) -->
-|R1D1='''MaNa'''  |R1D1race=p  |R1D1score=2 |R1D1flag=pl
-|R1D2=White  |R1D2race=z  |R1D2score=0 |R1D2flag=ua
-|R1D3=TargA  |R1D3race=z  |R1D3score=1 |R1D3flag=no
-|R1D4='''Sage'''  |R1D4race=p  |R1D4score=2 |R1D4flag=kr
-|R1D5=Rain  |R1D5race=t  |R1D5score=0 |R1D5flag=kr
-|R1D6='''Bly'''  |R1D6race=z  |R1D6score=2 |R1D6flag=ua
-|R1D7='''fraer'''  |R1D7race=p  |R1D7score=2 |R1D7flag=ua
-|R1D8=TheStC |R1D8race=t  |R1D8score=1 |R1D8flag=kr
-|R1D9=Giantt  |R1D9race=z  |R1D9score=1 |R1D9flag=bg
-|R1D10='''Nerchio''' |R1D10race=z |R1D10score=2 |R1D10flag=pl
-|R1D11=Harstem |R1D11race=p |R1D11score=1 |R1D11flag=nl
-|R1D12='''TLO''' |R1D12race=z |R1D12score=2 |R1D12flag=de
-|R1D13=SortOf |R1D13race=z |R1D13score=1 |R1D13flag=se
-|R1D14='''StarNaN''' |R1D14race=p |R1D14score=2 |R1D14flag=se
-|R1D15='''monchi''' |R1D15race=p |R1D15score=2 |R1D15flag=at
-|R1D16=DeathAngel |R1D16race=z |R1D16score=0 |R1D16flag=ro
-<!-- QUARTERFINALS -->
-|R2W1='''MaNa''' |R2W1race=p  |R2W1score=2 |R2W1flag=pl 
-|R2W2=Sage  |R2W2race=p  |R2W2score=0 |R2W2flag=kr
-|R2W3='''Bly'''  |R2W3race=z  |R2W3score=2 |R2W3flag=ua
-|R2W4=fraer  |R2W4race=p  |R2W4score=0 |R2W4flag=ua
-|R2W5='''Nerchio''' |R2W5race=z  |R2W5score=2 |R2W5flag=pl
-|R2W6=TLO   |R2W6race=z  |R2W6score=0 |R2W6flag=de
-|R2W7='''StarNaN'''  |R2W7race=p  |R2W7score=2 |R2W7flag=se
-|R2W8=monchi  |R2W8race=p  |R2W8score=1 |R2W8flag=at
-<!-- SEMIFINALS -->
-|R3W1=MaNa  |R3W1race=p  |R3W1score=1 |R3W1flag=pl
-|R3W2='''Bly'''  |R3W2race=z  |R3W2score=2 |R3W2flag=ua
-|R3W3='''Nerchio'''  |R3W3race=z  |R3W3score=2 |R3W3flag=pl
-|R3W4=StarNaN  |R3W4race=p  |R3W4score=1 |R3W4flag=se
-<!-- FINAL MATCH -->
-|R4W1=Bly  |R4W1race=z  |R4W1score=0 |R4W1flag=ua
-|R4W2='''Nerchio'''  |R4W2race=z  |R4W2score=3 |R4W2flag=pl
+ <!-- ROUND OF 16 (Ro16) -->
+ |R1D1='''MaNa'''  |R1D1race=p  |R1D1score=2 |R1D1flag=pl
+ |R1D2=White  |R1D2race=z  |R1D2score=0 |R1D2flag=ua
+ |R1D3=TargA  |R1D3race=z  |R1D3score=1 |R1D3flag=no
+ |R1D4='''Sage'''  |R1D4race=p  |R1D4score=2 |R1D4flag=kr
+ |R1D5=Rain  |R1D5race=t  |R1D5score=0 |R1D5flag=kr
+ |R1D6='''Bly'''  |R1D6race=z  |R1D6score=2 |R1D6flag=ua
+ |R1D7='''fraer'''  |R1D7race=p  |R1D7score=2 |R1D7flag=ua
+ |R1D8=TheStC |R1D8race=t  |R1D8score=1 |R1D8flag=kr
+ |R1D9=Giantt  |R1D9race=z  |R1D9score=1 |R1D9flag=bg
+ |R1D10='''Nerchio''' |R1D10race=z |R1D10score=2 |R1D10flag=pl
+ |R1D11=Harstem |R1D11race=p |R1D11score=1 |R1D11flag=nl
+ |R1D12='''TLO''' |R1D12race=z |R1D12score=2 |R1D12flag=de
+ |R1D13=SortOf |R1D13race=z |R1D13score=1 |R1D13flag=se
+ |R1D14='''StarNaN''' |R1D14race=p |R1D14score=2 |R1D14flag=se
+ |R1D15='''monchi''' |R1D15race=p |R1D15score=2 |R1D15flag=at
+ |R1D16=DeathAngel |R1D16race=z |R1D16score=0 |R1D16flag=ro
+  <!-- QUARTERFINALS -->
+  |R2W1='''MaNa''' |R2W1race=p  |R2W1score=2 |R2W1flag=pl 
+  |R2W2=Sage  |R2W2race=p  |R2W2score=0 |R2W2flag=kr
+  |R2W3='''Bly'''  |R2W3race=z  |R2W3score=2 |R2W3flag=ua
+  |R2W4=fraer  |R2W4race=p  |R2W4score=0 |R2W4flag=ua
+  |R2W5='''Nerchio''' |R2W5race=z  |R2W5score=2 |R2W5flag=pl
+  |R2W6=TLO   |R2W6race=z  |R2W6score=0 |R2W6flag=de
+  |R2W7='''StarNaN'''  |R2W7race=p  |R2W7score=2 |R2W7flag=se
+  |R2W8=monchi  |R2W8race=p  |R2W8score=1 |R2W8flag=at
+   <!-- SEMIFINALS -->
+   |R3W1=MaNa  |R3W1race=p  |R3W1score=1 |R3W1flag=pl
+   |R3W2='''Bly'''  |R3W2race=z  |R3W2score=2 |R3W2flag=ua
+   |R3W3='''Nerchio'''  |R3W3race=z  |R3W3score=2 |R3W3flag=pl
+   |R3W4=StarNaN  |R3W4race=p  |R3W4score=1 |R3W4flag=se
+    <!-- FINAL MATCH -->
+    |R4W1=Bly  |R4W1race=z  |R4W1score=0 |R4W1flag=ua
+    |R4W2='''Nerchio'''  |R4W2race=z  |R4W2score=3 |R4W2flag=pl
+}}
+
+==== Match Summary ====
+===== Round of 16 =====
+{{box|start}}
+
+{{MatchSummary|bestof=3
+|lrthread=http://www.teamliquid.net/forum/viewmessage.php?topic_id=376820
+|vod=
+|1=MaNa |race1=p |flag1=pl
+|2=White |race2=z |flag2=ua
+|map1=Ohana |win1=1
+|map2=Cloud Kingdom |win2=1
+}}
+
+{{box|break}}
+
+{{MatchSummary|bestof=3
+|lrthread=http://www.teamliquid.net/forum/viewmessage.php?topic_id=376820
+|vod=
+|1=TargA |race1=z |flag1=no
+|2=Sage |race2=p |flag2=kr
+|map1=Daybreak |win1=1
+|map2=Ohana |win2=2
+|map3=Cloud Kingdom |win3=2
+}}
+
+{{box|break}}
+
+{{MatchSummary|bestof=3
+|lrthread=http://www.teamliquid.net/forum/viewmessage.php?topic_id=376820
+|vod=
+|1=Rain |race1=t |flag1=kr |link1=Rain (Korean Terran)
+|2=Bly |race2=z |flag2=ua
+|map1=Metropolis |win1=2
+|map2=Ohana |win2=2
+}}
+
+{{box|break}}
+
+{{MatchSummary|bestof=3
+|lrthread=http://www.teamliquid.net/forum/viewmessage.php?topic_id=376820
+|vod=http://www.youtube.com/watch?v=5vA5j5RA13c
+|1=fraer |race1=p |flag1=ua
+|2=TheStC |race2=t |flag2=kr
+|map1=Daybreak |win1=1
+|map2=Ohana |win2=2
+|map3=Antiga Shipyard |win3=1
+}}
+
+{{box|break}}
+
+{{MatchSummary|bestof=3
+|lrthread=http://www.teamliquid.net/forum/viewmessage.php?topic_id=376820
+|vod=
+|1=Giantt |race1=z |flag1=bulgaria
+|2=Nerchio |race2=z |flag2=pl
+|map1=Daybreak |win1=1
+|map2=Ohana |win2=2
+|map3=Cloud Kingdom |win3=2
+}}
+
+{{box|break}}
+
+{{MatchSummary|bestof=3
+|lrthread=http://www.teamliquid.net/forum/viewmessage.php?topic_id=376820
+|vod=http://www.youtube.com/watch?v=170_wGQ6ox8
+|1=Harstem |race1=p |flag1=nl
+|2=TLO |race2=z |flag2=de
+|map1=Metropolis |win1=1
+|map2=Daybreak |win2=2
+|map3=Cloud Kingdom |win3=2
+}}
+
+{{box|break}}
+
+{{MatchSummary|bestof=3
+|lrthread=http://www.teamliquid.net/forum/viewmessage.php?topic_id=376820
+|vod=
+|1=SortOf |race1=z |flag1=se
+|2=StarNaN |race2=p |flag2=se
+|map1=Daybreak |win1=1
+|map2=Metropolis |win2=2
+|map3=Cloud Kingdom |win3=2
+}}
+
+{{box|break}}
+
+{{MatchSummary|bestof=3
+|lrthread=http://www.teamliquid.net/forum/viewmessage.php?topic_id=376820
+|vod=
+|1=monchi |race1=p |flag1=at
+|2=DeathAngel |race2=z |flag2=ro
+|map1=Metropolis |win1=1
+|map2=Daybreak |win2=1
+}}
+
+{{box|end}}
+
+===== Quarterfinals =====
+{{box|start}}
+
+{{MatchSummary|bestof=3
+|lrthread=http://www.teamliquid.net/forum/viewmessage.php?topic_id=376820
+|vod=http://www.youtube.com/watch?v=90X1Ws0aWj0
+|1=MaNa |race1=p |flag1=pl
+|2=Sage |race2=p |flag2=kr
+|map1=Cloud Kingdom |win1=1
+|map2=Ohana |win2=1
+}}
+
+{{box|break}}
+
+{{MatchSummary|bestof=3
+|lrthread=http://www.teamliquid.net/forum/viewmessage.php?topic_id=376820
+|vod=http://www.youtube.com/watch?v=TUwat_6xpuw
+|1=Bly |race1=z |flag1=ua
+|2=fraer |race2=p |flag2=ua
+|map1=Daybreak |win1=1
+|map2=Cloud Kingdom |win2=1
+}}
+
+{{box|break}}
+
+{{MatchSummary|bestof=3
+|lrthread=http://www.teamliquid.net/forum/viewmessage.php?topic_id=376820
+|vod=http://www.youtube.com/watch?v=4AWvi9kpvQI
+|1=Nerchio |race1=z |flag1=pl
+|2=TLO  |race2=z |flag2=de
+|map1=Metropolis |win1=1
+|map2=Cloud Kingdom |win2=1
+}}
+
+{{box|break}}
+
+{{MatchSummary|bestof=3
+|lrthread=http://www.teamliquid.net/forum/viewmessage.php?topic_id=376820
+|vod=http://www.youtube.com/watch?v=eoxBKWxolyE
+|1=StarNaN |race1=p |flag1=se
+|2=monchi |race2=p |flag2=at
+|map1=Cloud Kingdom |win1=1
+|map2=Metropolis |win2=2
+|map3=Ohana |win3=1
+}}
+
+{{box|end}}
+
+===== Semifinals =====
+{{box|start}}
+
+{{MatchSummary|bestof=3
+|lrthread=http://www.teamliquid.net/forum/viewmessage.php?topic_id=376820
+|vod=http://www.youtube.com/watch?v=Nk9JsNRsWj0
+|1=MaNa |race1=p |flag1=pl
+|2=Bly |race2=z |flag2=ua
+|map1=Ohana |win1=2
+|map2=Cloud Kingdom |win2=1
+|map3=Daybreak |win3=2
+}}
+
+{{box|break}}
+
+{{MatchSummary|bestof=3
+|lrthread=http://www.teamliquid.net/forum/viewmessage.php?topic_id=376820
+|vod=http://www.youtube.com/watch?v=bOMmm1p6pBU
+|1=Nerchio |race1=z |flag1=pl
+|2=StarNaN |race2=p |flag2=se
+|map1=Metropolis |win1=1
+|map2=Daybreak |win2=2
+|map3=Ohana |win3=1
+}}
+
+{{box|end}}
+
+===== Finals =====
+{{MatchSummary|bestof=5
+|lrthread=http://www.teamliquid.net/forum/viewmessage.php?topic_id=376820
+|vod=http://www.youtube.com/watch?v=u1BDsLtGsFU
+|1=Bly |race1=z |flag1=ua
+|2=Nerchio |race2=z |flag2=pl
+|map1=Antiga Shipyard |win1=2
+|map2=Daybreak |win2=2
+|map3=Cloud Kingdom |win3=2
 }}

@@ -10,11 +10,11 @@ module StarcraftLiquipediaScrape
       puts "Uploading #{set}"
 
       for i in 0...set.p1.score
-        save_game set.game_id, i, set.event.id, "", "", set.p1.name, set.p1.race, 1, set.p1.flag, set.p2.name, set.p2.race, 0, set.p2.flag
+        save_game set.game_id, i, set.event.id, "", set.map, set.p1.name, set.p1.race, 1, set.p1.flag, set.p2.name, set.p2.race, 0, set.p2.flag
       end
 
       for i in 0...set.p2.score
-        save_game set.game_id, set.p1.score + i, set.event.id, "", "", set.p2.name, set.p2.race, 1, set.p2.flag, set.p1.name, set.p1.race, 0, set.p1.flag
+        save_game set.game_id, set.p1.score + i, set.event.id, "", set.map, set.p2.name, set.p2.race, 1, set.p2.flag, set.p1.name, set.p1.race, 0, set.p1.flag
       end
     end
 
