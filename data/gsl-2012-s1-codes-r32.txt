@@ -1,0 +1,96 @@
+==== Group A &amp; B ====
+{{Col}}
+January 9, 2012 18:10 KST(GMT+9):
+
+{{GroupTableStart| Group A |width=300px
+|preview=http://www.teamliquid.net/forum/viewmessage.php?topic_id=301734#three
+|lrthread=http://www.teamliquid.net/forum/viewmessage.php?topic_id=301612
+|vod=http://www.gomtv.net/2012gsls1/vod/66754
+|interview=http://www.teamliquid.net/forum/viewmessage.php?topic_id=302021
+|review=http://www.teamliquid.net/forum/viewmessage.php?topic_id=301952#one
+}}
+{{GroupTableSlot| {{player|flag=kr|race=t|GanZi}} |place=1|win_m=2|lose_m=0|win_g=4|lose_g=1|bg=proceed}}
+{{GroupTableSlot| {{player|flag=kr|race=T|jjakji}} |place=2|win_m=2|lose_m=1|win_g=4|lose_g=3|bg=proceed}}
+{{GroupTableSlot| {{player|flag=kr|race=t|BoxeR}} {{TA|2012_Global_StarCraft_II_League_Season_1/Code_A#1R2D1|down}} |place=3|win_m=1|lose_m=2|win_g=4|lose_g=4|bg=staydown}}
+{{GroupTableSlot| {{player|flag=tw|race=z|Sen}} {{TA|2012_Global_StarCraft_II_League_Season_1/Code_A#1R1D1|down}} |place=4|win_m=0|lose_m=2|win_g=0|lose_g=4|bg=staydown}}
+{{GroupTableEnd}}
+&lt;!--
+{{TA|#Group_A_.26_B_2|right}}
+{{TA|#Group_C_.26_D_2|right}}
+--&gt;
+
+{| class="wikitable collapsible collapsed" width="300"
+! colspan="2" | Group A Matches 
+|-
+| colspan="2" |
+# {{GameSet| {{player|flag=kr|race=T|link=false|jjakji}} | {{player|flag=tw|race=Z|link=false|Sen}} |map=Dual Sight|win=1}}
+# {{GameSet| {{player|flag=kr|race=T|link=false|jjakji}} | {{player|flag=tw|race=Z|link=false|Sen}} |map=Daybreak|win=1}}
+|-
+|
+# {{GameSet| {{player|flag=kr|race=T|link=false|BoxeR}} | {{player|flag=kr|race=T|link=false|GanZi}} |map=Cloud Kingdom|win=1}}
+# {{GameSet| {{player|flag=kr|race=T|link=false|BoxeR}} | {{player|flag=kr|race=T|link=false|GanZi}} |map=Metropolis|win=2}}
+# {{GameSet| {{player|flag=kr|race=T|link=false|BoxeR}} | {{player|flag=kr|race=T|link=false|GanZi}} |map=Dual Sight|win=2}}
+|-
+|
+# {{GameSet| {{player|flag=kr|race=T|link=false|jjakji}} | {{player|flag=kr|race=T|link=false|GanZi}} |map=Entombed Valley|win=2}}
+# {{GameSet| {{player|flag=kr|race=T|link=false|jjakji}} | {{player|flag=kr|race=T|link=false|GanZi}} |map=Antiga Shipyard|win=2}}
+|-
+|
+# {{GameSet| {{player|flag=tw|race=Z|link=false|Sen}} | {{player|flag=kr|race=T|link=false|BoxeR}} |map=Entombed Valley|win=2}}
+# {{GameSet| {{player|flag=tw|race=Z|link=false|Sen}} | {{player|flag=kr|race=T|link=false|BoxeR}} |map=Daybreak|win=2}}
+|-
+|
+# {{GameSet| {{player|flag=kr|race=T|link=false|jjakji}} | {{player|flag=kr|race=T|link=false|BoxeR}} |map=Bel'Shir Beach|win=2}}
+# {{GameSet| {{player|flag=kr|race=T|link=false|jjakji}} | {{player|flag=kr|race=T|link=false|BoxeR}} |map=Dual Sight|win=1}}
+# {{GameSet| {{player|flag=kr|race=T|link=false|jjakji}} | {{player|flag=kr|race=T|link=false|BoxeR}} |map=Antiga Shipyard|win=1}}
+|}
+
+{{Col-break}}
+January 10, 2012 18:10 KST(GMT+9):
+
+{{GroupTableStart| Group B |width=300px
+|preview=http://www.teamliquid.net/forum/viewmessage.php?topic_id=301952#two
+|lrthread=http://www.teamliquid.net/forum/viewmessage.php?topic_id=301892
+|vod=http://www.gomtv.net/2012gsls1/vod/66755
+|interview=http://www.teamliquid.net/forum/viewmessage.php?topic_id=302137
+|review=http://www.teamliquid.net/forum/viewmessage.php?topic_id=302149#one
+}}
+{{GroupTableSlot| {{player|flag=kr|race=t|SuperNova}} |place=1|win_m=2|lose_m=0|win_g=4|lose_g=2|bg=proceed}}
+{{GroupTableSlot| {{player|flag=kr|race=p|MC}} |place=2|win_m=2|lose_m=1|win_g=5|lose_g=4|bg=proceed}}
+{{GroupTableSlot| {{player|flag=kr|race=Z|Leenock}} {{TA|2012_Global_StarCraft_II_League_Season_1/Code_A#1R2D2|down}} |place=3|win_m=1|lose_m=2|win_g=4|lose_g=4|bg=staydown}}
+{{GroupTableSlot| {{player|flag=kr|race=t|Fin}} {{TA|2012_Global_StarCraft_II_League_Season_1/Code_A#1R1D7|down}} |place=4|win_m=0|lose_m=2|win_g=1|lose_g=4|bg=staydown}}
+{{GroupTableEnd}}
+&lt;!--
+{{TA|#Group_C_.26_D_2|right}}
+{{TA|#Group_A_.26_B_2|right}}
+--&gt;
+
+{| class="wikitable collapsible collapsed" width="300"
+! colspan="2" | Group B Matches 
+|-
+| colspan="2" |
+# {{GameSet| {{player|flag=kr|race=Z|link=false|Leenock}} | {{player|flag=kr|race=T|link=false|Fin}} |map=Daybreak|win=1}}
+# {{GameSet| {{player|flag=kr|race=Z|link=false|Leenock}} | {{player|flag=kr|race=T|link=false|Fin}} |map=Dual Sight|win=1}}
+|-
+|
+# {{GameSet| {{player|flag=kr|race=T|link=false|SuperNova}} | {{player|flag=kr|race=P|link=false|MC}} |map=Crossfire SE|win=1}}
+# {{GameSet| {{player|flag=kr|race=T|link=false|SuperNova}} | {{player|flag=kr|race=P|link=false|MC}} |map=Daybreak|win=2}}
+# {{GameSet| {{player|flag=kr|race=T|link=false|SuperNova}} | {{player|flag=kr|race=P|link=false|MC}} |map=Antiga Shipyard|win=1}}
+|-
+|
+# {{GameSet| {{player|flag=kr|race=Z|link=false|Leenock}} | {{player|flag=kr|race=T|link=false|SuperNova}} |map=Bel'Shir Beach|win=1}}
+# {{GameSet| {{player|flag=kr|race=Z|link=false|Leenock}} | {{player|flag=kr|race=T|link=false|SuperNova}} |map=Antiga Shipyard|win=2}}
+# {{GameSet| {{player|flag=kr|race=Z|link=false|Leenock}} | {{player|flag=kr|race=T|link=false|SuperNova}} |map=Daybreak|win=2}}
+|-
+|
+# {{GameSet| {{player|flag=kr|race=T|link=false|Fin}} | {{player|flag=kr|race=P|link=false|MC}} |map=Bel'Shir Beach|win=1}}
+# {{GameSet| {{player|flag=kr|race=T|link=false|Fin}} | {{player|flag=kr|race=P|link=false|MC}} |map=Daybreak|win=2}}
+# {{GameSet| {{player|flag=kr|race=T|link=false|Fin}} | {{player|flag=kr|race=P|link=false|MC}} |map=Metropolis|win=2}}
+|-
+|
+# {{GameSet| {{player|flag=kr|race=Z|link=false|Leenock}} | {{player|flag=kr|race=P|link=false|MC}} |map=Cloud Kingdom|win=2}}
+# {{GameSet| {{player|flag=kr|race=Z|link=false|Leenock}} | {{player|flag=kr|race=P|link=false|MC}} |map=Bel'Shir Beach|win=1}}
+# {{GameSet| {{player|flag=kr|race=Z|link=false|Leenock}} | {{player|flag=kr|race=P|link=false|MC}} |map=Daybreak|win=2}}
+|}
+
+{{EndCol}}

@@ -1,0 +1,18 @@
+====Group H====
+{{GroupTableStart| Group H |width=250px}}
+{{GroupTableSlot| {{player|flag=nl|race=p|Grubby}}   |win_m=3|lose_m=0|win_g=6|lose_g=2|place=1|bg=up}}
+{{GroupTableSlot| {{player|flag=de|race=t|GoOdy}}   |win_m=2|lose_m=1|win_g=5|lose_g=2|place=2|bg=up}}
+{{GroupTableSlot| {{player|flag=nl|race=z|Ret}}   |win_m=1|lose_m=2|win_g=2|lose_g=4|place=3|bg=drop}}
+{{GroupTableSlot| {{player|flag=us|race=z|Destiny}}   |win_m=0|lose_m=3|win_g=1|lose_g=6|place=4|bg=drop}}
+{{GroupTableEnd}}                                                                       
+{{MatchListStart| Group H Matches |width=250px}}
+{{MatchListSlot| Ret {{z}} | {{p}} Grubby |games1=0|games2=2|win=2}}
+{{MatchListSlot| GoOdy {{t}} | {{z}} Destiny |games1=2|games2=0|win=1}}
+{{MatchListSlot| Ret {{z}} | {{t}} GoOdy |games1=0|games2=2|win=2}}
+{{MatchListSlot| Grubby {{p}} | {{z}} Destiny |games1=2|games2=1|win=1}}
+{{MatchListSlot| Ret {{z}} | {{z}} Destiny |games1=2|games2=0|win=1}}
+{{MatchListSlot| Grubby {{p}} | {{t}} GoOdy |games1=2|games2=1|win=1}}
+{{MatchListEnd}}
+{{box|end}}
+&lt;/div&gt;
+&lt;/div&gt;

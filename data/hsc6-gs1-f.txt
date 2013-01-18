@@ -1,0 +1,16 @@
+====Group F====
+{{GroupTableStart| Group F |width=250px}}
+{{GroupTableSlot| {{player|flag=kr|race=p|HerO}}   |win_m=3|lose_m=0|win_g=6|lose_g=0|place=1|bg=up}}
+{{GroupTableSlot| {{player|flag=fi|race=t|Naama}}   |win_m=2|lose_m=1|win_g=4|lose_g=3|place=2|bg=up}}
+{{GroupTableSlot| {{player|flag=us|race=t|KawaiiRice}}   |win_m=1|lose_m=2|win_g=3|lose_g=4|place=3|bg=down}}
+{{GroupTableSlot| {{player|flag=se|race=z|HayprO}}   |win_m=0|lose_m=3|win_g=0|lose_g=6|place=4|bg=down}}
+{{GroupTableEnd}}
+{{MatchListStart| Group F Matches |width=250px}}
+{{MatchListSlot| HerO {{p}} | {{t}} Naama |games1=2|games2=0|win=1}}
+{{MatchListSlot| KawaiiRice&amp;nbsp;{{t}} | {{z}} HayprO |games1=2|games2=0|win=1}}
+{{MatchListSlot| HerO {{p}} | {{t}}&amp;nbsp;KawaiiRice |games1=2|games2=0|win=1}}
+{{MatchListSlot| Naama {{t}} | {{z}} HayprO |games1=2|games2=0|win=1}}
+{{MatchListSlot| HerO {{p}} | {{z}} HayprO |games1=2|games2=0|win=1}}
+{{MatchListSlot| Naama {{t}} | {{t}} KawaiiRice |games1=2|games2=1|win=1}}
+{{MatchListEnd}}
+{{box|break|padding=2em}}

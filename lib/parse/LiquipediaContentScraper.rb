@@ -4,6 +4,7 @@ module StarcraftLiquipediaScrape
     require 'mysql'
     require 'open-uri'
     require 'nokogiri'
+    require 'parse/LiquipediaParser.rb'
 
     def initialize()
 
@@ -38,12 +39,15 @@ module StarcraftLiquipediaScrape
         ensure
           aFile.close
         end
-
             
       end
     end
 
     def startParses(endpoints)
+      endpoints.each_pair do |id, url|
+        puts "Starting parse #{id}"
+        StarcraftLiquipediaScrape::LiquipediaParser.new(id, "data/#{id}.txt")
+      end
     end
 
     def get_db_info()

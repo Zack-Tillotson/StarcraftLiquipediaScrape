@@ -1,0 +1,16 @@
+====Group C====
+{{GroupTableStart| Group C |width=250px}}
+{{GroupTableSlot| {{player|flag=kr|race=p|ReaL}}   |win_m=3|lose_m=0|win_g=6|lose_g=0|place=1|bg=proceed}}
+{{GroupTableSlot| {{player|flag=ua|race=z|DIMAGA}}   |win_m=2|lose_m=1|win_g=4|lose_g=2|place=2|bg=proceed}}
+{{GroupTableSlot| {{player|flag=ca|race=p|Attero}}   |win_m=1|lose_m=2|win_g=2|lose_g=4|place=3|bg=down}}
+{{GroupTableSlot| {{player|flag=fr|race=p|Adelscott}}   |win_m=0|lose_m=3|win_g=0|lose_g=6|place=4|bg=down}}
+{{GroupTableEnd}}                                                                       
+{{MatchListStart| Group C Matches |width=250px}}
+{{MatchListSlot| DIMAGA {{z}} | {{p}} Attero |games1=2|games2=0|win=1}}
+{{MatchListSlot| Adelscott {{p}} | {{p}} ReaL |games1=0|games2=2|win=2}}
+{{MatchListSlot| DIMAGA {{z}} | {{p}} Adelscott |games1=2|games2=0|win=1}}
+{{MatchListSlot| Attero {{p}} | {{p}} ReaL |games1=0|games2=2|win=2}}
+{{MatchListSlot| DIMAGA {{z}} | {{p}} ReaL |games1=0|games2=2|win=2}}
+{{MatchListSlot| Attero {{p}} | {{p}} Adelscott |games1=2|games2=0|win=1}}
+{{MatchListEnd}}
+{{box|break|padding=2em}}

@@ -1,0 +1,16 @@
+====Group E====
+{{GroupTableStart| Group E |width=250px}}
+{{GroupTableSlot| {{player|flag=kr|race=p|JYP}}   |win_m=3|lose_m=0|win_g=6|lose_g=1|place=1|bg=up}}
+{{GroupTableSlot| {{player|flag=de|race=z|DarKFoRcE}}   |win_m=2|lose_m=1|win_g=4|lose_g=2|place=2|bg=up}}
+{{GroupTableSlot| {{player|flag=uk|race=p|BlinG}}   |win_m=1|lose_m=2|win_g=3|lose_g=4|place=3|bg=down}}
+{{GroupTableSlot| {{player|flag=de|race=t|DarkHydra}}   |win_m=0|lose_m=3|win_g=0|lose_g=6|place=4|bg=down}}
+{{GroupTableEnd}}                                                                       
+{{MatchListStart| Group E Matches |width=250px}}
+{{MatchListSlot| JYP {{p}} | {{t}}&amp;nbsp;DarkHydra |games1=2|games2=0|win=1}}
+{{MatchListSlot| DarKFoRcE&amp;nbsp;{{z}} | {{p}} BlinG |games1=2|games2=0|win=1}}
+{{MatchListSlot| JYP {{p}} | {{z}}&amp;nbsp;DarKFoRcE |games1=2|games2=0|win=1}}
+{{MatchListSlot| DarkHydra {{t}} | {{p}} BlinG |games1=0|games2=2|win=2}}
+{{MatchListSlot| JYP {{p}} | {{p}} BlinG |games1=2|games2=1|win=1}}
+{{MatchListSlot| DarkHydra {{t}} | {{z}} DarKFoRcE |games1=0|games2=2|win=2}}
+{{MatchListEnd}}
+{{box|break|padding=2em}}

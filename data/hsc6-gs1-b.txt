@@ -1,0 +1,16 @@
+====Group B====
+{{GroupTableStart| Group B |width=250px}}
+{{GroupTableSlot| {{player|flag=kr|race=t|MarineKing}}   |win_m=2|lose_m=1|win_g=5|lose_g=2|place=1|bg=proceed}}
+{{GroupTableSlot| {{player|flag=kr|race=z|viOLet}}   |win_m=2|lose_m=1|win_g=4|lose_g=2|place=2|bg=proceed}}
+{{GroupTableSlot| {{player|flag=de|race=z|Delphi}}   |win_m=2|lose_m=1|win_g=4|lose_g=3|place=3|bg=drop}}
+{{GroupTableSlot| {{player|flag=de|race=p|HasuObs}}   |win_m=0|lose_m=3|win_g=0|lose_g=6|place=4|bg=drop}}
+{{GroupTableEnd}}                                                                       
+{{MatchListStart| Group B Matches |width=250px}}
+{{MatchListSlot| MarineKing {{t}} | {{p}} HasuObs |games1=2|games2=0|win=1}}
+{{MatchListSlot| MarineKing {{t}} | {{z}} Delphi |games1=1|games2=2|win=2}}
+{{MatchListSlot| HasuObs {{p}} | {{z}} viOLet |games1=0|games2=2|win=2}}
+{{MatchListSlot| viOLet {{z}} | {{z}} Delphi |games1=2|games2=0|win=1}}
+{{MatchListSlot| HasuObs {{p}} | {{z}} Delphi |games1=0|games2=2|win=2}}
+{{MatchListSlot| MarineKing {{t}} | {{z}} viOLet  |games1=2|games2=0|win=1}}
+{{MatchListEnd}}
+{{box|break|padding=2em}}

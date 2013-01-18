@@ -1,0 +1,17 @@
+====Group D====
+{{GroupTableStart| Group D |width=250px}}
+{{GroupTableSlot| {{player|flag=kr|race=p|MC}}   |win_m=3|lose_m=0|win_g=6|lose_g=1|place=1|bg=up}}
+{{GroupTableSlot| {{player|flag=it|race=t|ClouD}}   |win_m=2|lose_m=1|win_g=5|lose_g=2|place=2|bg=up}}
+{{GroupTableSlot| {{player|flag=nl|race=t|PoYo}}   |win_m=1|lose_m=2|win_g=2|lose_g=5|place=3|bg=down}}
+{{GroupTableSlot| {{player|flag=fr|race=t|AureS}}   |win_m=0|lose_m=3|win_g=1|lose_g=6|place=4|bg=down}}
+                                                                                        
+{{GroupTableEnd}}
+{{MatchListStart| Group D Matches |width=250px}}
+{{MatchListSlot| MC {{p}} | {{t}} ClouD |games1=2|games2=1|win=1}}
+{{MatchListSlot| PoYo {{t}} | {{t}} AureS |games1=2|games2=1|win=1}}
+{{MatchListSlot| MC {{p}} | {{t}} PoYo |games1=2|games2=0|win=1}}
+{{MatchListSlot| ClouD {{t}} | {{t}} AureS |games1=2|games2=0|win=1}}
+{{MatchListSlot| MC {{p}} | {{t}} AureS |games1=2|games2=0|win=1}}
+{{MatchListSlot| ClouD {{t}} | {{t}} PoYo |games1=2|games2=0|win=1}}
+{{MatchListEnd}}
+{{box|break|padding=2em}}
