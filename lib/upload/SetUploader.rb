@@ -3,7 +3,8 @@ module StarcraftLiquipediaScrape
 
   class SetUploader
     def initialize()
-      @con = Mysql.new 
+      dbInfo = get_db_info()
+      @con = Mysql.new dbInfo['host'], dbInfo['user'], dbInfo['pass'], dbInfo['database']
     end
 
     def upload(set)
@@ -38,6 +39,11 @@ module StarcraftLiquipediaScrape
 
     def done()
       @con.close if @con
+    end
+
+    def get_db_info()
+      input = IO.read("db.txt")
+      return Hash[*input.split(/\s*[\n=]\s*/)]
     end
 
   end
