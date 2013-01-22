@@ -61,7 +61,6 @@ module StarcraftLiquipediaScrape
     def save()
 
       puts "Save!"
-      puts @games
 
       # Save the game objects
       uploader = StarcraftLiquipediaScrape::SetUploader.new()

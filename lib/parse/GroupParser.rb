@@ -32,13 +32,26 @@ module StarcraftLiquipediaScrape
         if @status == "inside_group_table"
 
           if /\{\{GroupTableSlot/.match(line)
+              country = ""
+              race = ""
+              name = ""
             if /\{\{player\|flag=([^\|]*)\|race=([^\|]*)\|([^\}]*)\}\}/.match(line)
-              puts "save player #{$3}, #{$1}, #{$2}"
-              savePlayer($3, $1, $2)
+              country = $1
+              race = $2
+              name = $3
+            elsif /\{\{player\|race=([^\|]*)\|flag=([^\|]*)\|([^\}]*)\}\}/.match(line)
+              race = $1
+              country = $2
+              name = $3
             else
               puts "Error getting players"
               return
             end
+
+              name = name.gsub(/\|.*$/, "")
+
+              puts "save player #{name}, #{country}, #{race}"
+              savePlayer(name, country, race)
             next
           elsif /\{\{MatchListStart/.match(line)
             @status = "inside_compact_matches"
@@ -48,22 +61,30 @@ module StarcraftLiquipediaScrape
             @status = "inside_matches"
             puts "inside match list"
             next
+          elsif /\{\{GameSet/.match(line)
+            puts "inside GameSet"
+            if /\{\{GameSet\|\{\{.*\|([^\|]+)\}\}\|\{\{.*\|([^\|]+)\}\}\|map=([^\|]+)\|win=([0-9]+)/.match(line)
+              @player1 = $1
+              @player2 = $2
+              @map = $3
+              @winner = $4
+              makeGame()
+              next
+            else
+              puts "Not a real game"
+            end
           end
 
         end
             
         if @status == "inside_compact_matches"
-          if /\{\{MatchListSlot/.match(line)
-            puts line
-            line = line.gsub(/ */, "").gsub(/\{\{.\}\}/, "").gsub(/[^A-Za-z 0-9 \.,\?'""!@#\$%\^&\*\(\)-_=\+;:<>\/\\\|\}\{\[\]`~]*/, "")
-            puts line
-            /\{\{MatchListSlot\|([^\|]+)\|([^\|]+)\|games1=([^\|]+)\|games2=([^\|]+)\|/.match(line)
-            puts "matched #{$1} #{$2} #{$3} #{$4}" 
+          if /\{\{MatchListSlot(.*)/.match(line)
+            line = $1.gsub(/[^A-Za-z 0-9 \.,\?'""!@#\$%\^&\*\(\)-_=\+;:<>\/\\\|\}\{\[\]`~]*/, "").gsub(/\{\{[^\}]*\}\}/, "").gsub(/ /, "")
+            /\|([^\|]+)\|([^\|]+)\|games1=([^\|]+)\|games2=([^\|]+)\|/.match(line)
             @player1 = $1
             @player2 = $2
             @score1 = $3
             @score2 = $4
-            puts "#{@player1}, #{@player2}, #{@score1}, #{@score2}"
             makeGame()
           end
         end
@@ -99,7 +120,6 @@ module StarcraftLiquipediaScrape
             @map = $2
             @map = @map.gsub(/\n/, "")
             @map = @map.gsub(/\}/, "")
-            puts "#{@player1} #{@player2} #{@winner} #{@map}"
             makeGame()
           end
 

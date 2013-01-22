@@ -6,10 +6,11 @@ module StarcraftLiquipediaScrape
 
     def initialize
       @games = Hash.new
+      @game_line_no = 0
     end
 
     def can_parse_list
-      ["[0-9]*SEBracket", "[0-9]*DEBracket", "IPL5FinalBracket", "MLGSummerBracket\"Groups", "MLGSummerBracket", "MLGSpringOWBSeeds"]
+      ["[0-9]*SEBracket", "[0-9]*DEBracket", "IPL5FinalBracket", "MLGSummerBracket\"Groups", "MLGSummerBracket", "MLGSpringOWBSeeds", "CodeABracket"]
     end
 
     def parse(lines)
@@ -34,10 +35,8 @@ module StarcraftLiquipediaScrape
         if not inside_parsable_item
           next
         end
-
-        if /(.*)\{\{(.*)\}\}(.*)/.match(line)
-          line = $1+$2+$3
-        end
+  
+        line = line.gsub(/\{\{([^\}]*)\}\}/, '\1')
 
         if /(.*)\}\}/.match(line)
           if not $1.empty?()
@@ -59,8 +58,6 @@ module StarcraftLiquipediaScrape
 
     def parse_item(lines)
 
-      game_line_no = 0
-
       lines.each do |line|
 
         if !/R[0-9]+[A-Z][0-9]+/.match(line)
@@ -68,8 +65,10 @@ module StarcraftLiquipediaScrape
         end
 
         # Every two lines should be a new game
-        gameno = game_line_no / 2
-        playerno = game_line_no % 2 == 0
+        gameno = @game_line_no / 2
+        playerno = @game_line_no % 2 == 0
+
+        puts "#{gameno}, #{playerno} = #{line}"
 
         @games[gameno] = StarcraftLiquipediaScrape::Set.new("#{gameno}") if !@games.has_key?(gameno) 
 
@@ -78,14 +77,14 @@ module StarcraftLiquipediaScrape
           pev.scan(/^R[0-9]+[A-Z][0-9]+(.*)=(.*)$/) do |attr, val|
 
             attr = "name" if attr == nil or attr.length() == 0
-            val = val.gsub("'", "")
+            val = val.gsub(/' .*/, "'").gsub("'", "")
 
             @games[gameno].set_attr(playerno, attr, val)
 
           end
         end 
 
-        game_line_no = game_line_no + 1
+        @game_line_no = @game_line_no + 1
 
       end
 
