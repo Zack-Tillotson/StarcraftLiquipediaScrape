@@ -10,7 +10,7 @@ module StarcraftLiquipediaScrape
     end
 
     def can_parse_list
-      ["[0-9]*SEBracket", "[0-9]*DEBracket", "IPL5FinalBracket", "MLGSummerBracket\"Groups", "MLGSummerBracket", "MLGSpringOWBSeeds", "CodeABracket"]
+      ["[0-9]*SEBracket", "[0-9]*DEBracket", "IPL5FinalBracket", "MLG.*Bracket.Groups", "MLG.*Bracket", "MLG.*O.BSeeds", "CodeABracket" ]
     end
 
     def parse(lines)
@@ -68,7 +68,7 @@ module StarcraftLiquipediaScrape
         gameno = @game_line_no / 2
         playerno = @game_line_no % 2 == 0
 
-        puts "#{gameno}, #{playerno} = #{line}"
+        #puts "#{gameno}, #{playerno} = #{line}"
 
         @games[gameno] = StarcraftLiquipediaScrape::Set.new("#{gameno}") if !@games.has_key?(gameno) 
 

@@ -15,7 +15,9 @@ module StarcraftLiquipediaScrape
 
       lines.each do |line|
 
-        puts "     #{line}"
+        line = line.gsub(/ *\|/, "|").gsub(/\| */, "|").gsub(/&amp;nbsp;/, "")
+
+        #puts "     #{@status} #{line}"
 
         if @status == "outside_all"
 
@@ -45,7 +47,7 @@ module StarcraftLiquipediaScrape
               name = $3
             else
               puts "Error getting players"
-              return
+              next
             end
 
               name = name.gsub(/\|.*$/, "")
@@ -57,7 +59,7 @@ module StarcraftLiquipediaScrape
             @status = "inside_compact_matches"
             puts "inside match compact list"
             next
-          elsif /\{\{MatchList *$/.match(line)
+          elsif /\{\{MatchList\|/.match(line) or /\{\{MatchList *$/.match(line)
             @status = "inside_matches"
             puts "inside match list"
             next
@@ -109,11 +111,18 @@ module StarcraftLiquipediaScrape
 
         if @status == "inside_a_match"
 
-          if /\|player([0-9]+)=([^|]+|)/.match(line)
+          if /\|player([0-9]+)=([^|]+)\|(.*)/.match(line)
             if $1 == "1"
               @player1 = $2
             else
               @player2 = $2
+            end
+            if /\|player([0-9]+)=([^|]+)\|(.*)/.match($3)
+              if $1 == "1"
+                @player1 = $2
+              else
+                @player2 = $2
+              end
             end
           elsif /\|map[0-9]+win=([0-9]+)\|map[0-9]+=([^|]+)\|?/.match(line)
             @winner = $1
@@ -121,10 +130,15 @@ module StarcraftLiquipediaScrape
             @map = @map.gsub(/\n/, "")
             @map = @map.gsub(/\}/, "")
             makeGame()
-          end
-
-          if /\}\}/.match(line)
-            @status = "inside_matches"
+          elsif /\|winner=([0-9]+)\|map=([^|]+)\|?/.match(line)
+            @winner = $1
+            @map = $2
+            @map = @map.gsub(/\n/, "")
+            @map = @map.gsub(/\}/, "")
+            makeGame()
+          elsif /\{\{[bB]ox\|/.match(line)
+            @status = "outside_all"
+            puts "outside_all"
           end
 
           next
@@ -157,8 +171,18 @@ module StarcraftLiquipediaScrape
 
     def makeGame()
 
+      if @player1 == nil or @player2 == nil 
+        puts "Player1 or Player2 nil, can't go forward"
+        return 
+      end
+
       p1 = if @players[@player1] != nil then @players[@player1] else @players[@player1.downcase] end
       p2 = if @players[@player2] != nil then @players[@player2] else @players[@player2.downcase] end
+
+      if p1 == nil or p2== nil 
+        puts "Unable to lookup player. #{@player1}, #{p1}, #{@player2}, #{p2}. Can't go forward"
+        return 
+      end
 
       if @winner != nil
         if @winner == 1 
@@ -184,8 +208,6 @@ module StarcraftLiquipediaScrape
       game.set_all_attrs(@map, p1, p2)
 
       @games[@games.length] = game
-
-      clearVars()
 
     end
 

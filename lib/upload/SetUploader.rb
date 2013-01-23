@@ -8,7 +8,6 @@ module StarcraftLiquipediaScrape
     end
 
     def upload(set)
-      puts "Uploading #{set}"
 
       for i in 0...set.p1.score
         save_game set.game_id, i, set.event.id, "", set.map, set.p1.name, set.p1.race, 1, set.p1.flag, set.p2.name, set.p2.race, 0, set.p2.flag
@@ -27,13 +26,13 @@ module StarcraftLiquipediaScrape
           if rs.fetch()[0] == 0
             rs = @con.prepare 'insert into games(id, series_index, event_id, play_date, map, p1_name, p1_race, p1_winner, p1_country, p2_name, p2_race, p2_winner, p2_country) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'
             rs.execute game_id, game_index, event_id, game_date, map_id, p1_name, p1_race, p1_winner, p1_country, p2_name, p2_race, p2_winner, p2_country
-            puts "  Success"
+            puts "Uploading #{game_id}, #{game_index}, #{event_id}, #{p1_name}, #{p2_name} - Success"
           else 
-            puts "  Repeat"
+            puts "Uploading #{game_id}, #{game_index}, #{event_id}, #{p1_name}, #{p2_name} - Repeat"
           end
         rescue StandardError => e
+          puts "Uploading #{game_id}, #{game_index}, #{event_id}, #{p1_name}, #{p2_name} - Failed"
           puts e
-          puts "  Failed"
         end
     end
 

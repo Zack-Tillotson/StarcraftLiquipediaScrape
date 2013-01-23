@@ -4,7 +4,7 @@ module StarcraftLiquipediaScrape
     end
 
     def race
-      @race
+      if @race then @race.downcase else "" end
     end
 
     def name
@@ -12,7 +12,7 @@ module StarcraftLiquipediaScrape
     end
 
     def flag
-      if @flag then @flag else "" end
+      if @flag then @flag.downcase else "" end
     end
 
     def score

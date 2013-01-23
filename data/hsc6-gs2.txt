@@ -1,75 +1,253 @@
-===Group Stage #2===
-&lt;div class="NavFrame collapsed"&gt;
-&lt;div class="NavHead" style="background-color:#EEE; border:1px solid #AAA"&gt;Click [show] on the right to view Group Stage #2&lt;/div&gt;
- &lt;div class="NavContent"&gt;
-{{box|start|padding=2em}}
-====Group A====
-{{GroupTableStart| Group A |width=250px}}
-{{GroupTableSlot| {{player|flag=kr|race=t|Sound}}       |win_m=3|lose_m=0|win_g=6|lose_g=3|place=1|bg=up}}
-{{GroupTableSlot| {{player|flag=ua|race=z|DIMAGA}}      |win_m=2|lose_m=1|win_g=5|lose_g=2|place=2|bg=up}}
-{{GroupTableSlot| {{player|flag=nl|race=p|Grubby}}      |win_m=1|lose_m=2|win_g=3|lose_g=4|place=3|bg=down}}
-{{GroupTableSlot| {{player|flag=de|race=z|DarKFoRcE}}   |win_m=0|lose_m=3|win_g=1|lose_g=6|place=4|bg=down}}
-{{GroupTableEnd}}                                                                       
-{{MatchListStart| Group A Matches |width=250px}}
-{{MatchListSlot| Sound {{t}} | {{z}} DIMAGA |games1=2|games2=1|win=1}}
-{{MatchListSlot| Grubby {{p}} | {{z}} DarKFoRcE |games1=2|games2=0|win=1}}
-{{MatchListSlot| Sound {{t}} | {{p}} Grubby |games1=2|games2=1|win=1}}
-{{MatchListSlot| DIMAGA {{z}} | {{z}} DarKFoRcE |games1=2|games2=0|win=1}}
-{{MatchListSlot| Sound {{t}} | {{z}} DarKFoRcE |games1=2|games2=1|win=1}}
-{{MatchListSlot| DIMAGA {{z}} | {{p}} Grubby |games1=2|games2=0|win=1}}
-{{MatchListEnd}}
-{{box|break|padding=2em}}
-
-====Group B====
-{{GroupTableStart| Group B |width=250px}}
-{{GroupTableSlot| {{player|flag=kr|race=t|MarineKing}}   |win_m=3|lose_m=0|win_g=6|lose_g=0|place=1|bg=up}}
-{{GroupTableSlot| {{player|flag=kr|race=p|MC}}           |win_m=2|lose_m=1|win_g=4|lose_g=3|place=2|bg=up}}
-{{GroupTableSlot| {{player|flag=fr|race=z|Stephano}}     |win_m=1|lose_m=2|win_g=2|lose_g=4|place=3|bg=down}}
-{{GroupTableSlot| {{player|flag=de|race=p|Socke}}        |win_m=0|lose_m=3|win_g=1|lose_g=6|place=4|bg=down}}
-{{GroupTableEnd}}                                                                       
-{{MatchListStart| Group B Matches |width=250px}}
-{{MatchListSlot| MC {{p}} | {{t}}&amp;nbsp;MarineKing        |games1=0|games2=2|win=2}}
-{{MatchListSlot| Socke {{p}} | {{z}} Stephano       |games1=0|games2=2|win=2}}
-{{MatchListSlot| MC {{p}} | {{p}} Socke             |games1=2|games2=1|win=1}}
-{{MatchListSlot| MarineKing&amp;nbsp;{{t}} | {{z}} Stephano  |games1=2|games2=0|win=1}}
-{{MatchListSlot| MC {{p}} | {{z}} Stephano          |games1=2|games2=0|win=1}}
-{{MatchListSlot| MarineKing {{t}} | {{p}} Socke     |games1=2|games2=0|win=1}}
-{{MatchListEnd}}
-{{box|break|padding=2em}}
-
-====Group C====
-{{GroupTableStart| Group C |width=250px}}
-{{GroupTableSlot| {{player|flag=kr|race=p|JYP}}   |win_m=3|lose_m=0|win_g=6|lose_g=1|place=1|bg=up}}
-{{GroupTableSlot| {{player|flag=kr|race=p|ReaL}}   |win_m=2|lose_m=1|win_g=4|lose_g=4|place=2|bg=up}}
-{{GroupTableSlot| {{player|flag=de|race=t|GoOdy}}   |win_m=1|lose_m=2|win_g=4|lose_g=4|place=3|bg=down}}
-{{GroupTableSlot| {{player|flag=it|race=t|ClouD}}   |win_m=0|lose_m=3|win_g=1|lose_g=6|place=4|bg=down}}
-{{GroupTableEnd}}                                                                       
-{{MatchListStart| Group C Matches |width=250px}}
-{{MatchListSlot| JYP {{p}} | {{p}} ReaL    |games1=2|games2=0|win=1}}
-{{MatchListSlot| ClouD {{t}} | {{t}} GoOdy |games1=0|games2=2|win=2}}
-{{MatchListSlot| JYP {{p}} | {{t}} ClouD   |games1=2|games2=0|win=1}}
-{{MatchListSlot| ReaL {{p}} | {{t}} GoOdy  |games1=2|games2=1|win=1}}
-{{MatchListSlot| JYP {{p}} | {{t}} GoOdy   |games1=2|games2=1|win=1}}
-{{MatchListSlot| ReaL {{p}} | {{t}} ClouD  |games1=2|games2=1|win=1}}
-{{MatchListEnd}}
-{{box|break|padding=2em}}
-
-====Group D====
-{{GroupTableStart| Group D |width=250px}}
-{{GroupTableSlot| {{player|flag=pl|race=z|Nerchio}}   |win_m=3|lose_m=0|win_g=6|lose_g=2|place=1|bg=up}}
-{{GroupTableSlot| {{player|flag=kr|race=z|viOLet}}    |win_m=2|lose_m=1|win_g=4|lose_g=2|place=2|bg=up}}
-{{GroupTableSlot| {{player|flag=kr|race=p|HerO}}      |win_m=1|lose_m=2|win_g=3|lose_g=4|place=3|bg=down}}
-{{GroupTableSlot| {{player|flag=fi|race=t|Naama}}     |win_m=0|lose_m=3|win_g=1|lose_g=6|place=4|bg=down}}
-                                                                                        
+&lt;noinclude&gt;''This page is part of the [[HomeStory_Cup/6|HomeStory Cup VI]] tournament article.''__NOTOC__ &lt;/noinclude&gt;
+{{Box|padding=4em}}
+==== {{HiddenAnchor|Group A}} ====
+''December 21, 2012 14:00 CET(GMT+1):''
+{{GroupTableStart| Group A |width=300px
+|preview=
+|lrthread=
+|vod=
+|interview=
+|review=
+}}
+{{GroupTableSlot| {{player|flag=no|race=z|Snute}} |place=1|win_m=2|lose_m=0|win_g=4|lose_g=0|bg=up}}
+{{GroupTableSlot| {{player|flag=kr|race=z|Symbol}} |place=2|win_m=2|lose_m=1|win_g=4|lose_g=3|bg=up}}
+{{GroupTableSlot| {{player|flag=pl|race=p|MaNa}} |place=3|win_m=1|lose_m=2|win_g=2|lose_g=4|bg=down}}
+{{GroupTableSlot| {{player|flag=ua|race=z|DIMAGA}} |place=4|win_m=0|lose_m=2|win_g=1|lose_g=4|bg=down}}
 {{GroupTableEnd}}
-{{MatchListStart| Group D Matches |width=250px}}
-{{MatchListSlot| HerO {{p}} | {{z}} viOLet    |games1=0|games2=2|win=2}}
-{{MatchListSlot| Nerchio {{z}} | {{t}} Naama  |games1=2|games2=1|win=1}}
-{{MatchListSlot| HerO {{p}} | {{t}} Naama     |games1=2|games2=0|win=1}}
-{{MatchListSlot| viOLet {{z}} | {{z}} Nerchio |games1=0|games2=2|win=2}}
-{{MatchListSlot| HerO {{p}} | {{z}} Nerchio   |games1=1|games2=2|win=2}}
-{{MatchListSlot| viOLet {{z}} | {{t}} Naama   |games1=W|games2=0|win=1}}
-{{MatchListEnd}}
-{{box|end}}
-&lt;/div&gt;
-&lt;/div&gt;
+
+{{MatchList
+|title=Group A Matches
+
+&lt;!-- When adding new match results please try to sort them chronologically, by moving the match you are editing above the unplayed matches. --&gt;
+
+|match1={{MatchMaps
+|player1=MaNa  |player1race=p
+|player2=Snute  |player2race=z
+|winner=2
+|map1win=2  |map1=Daybreak
+|map2win=2  |map2=Cloud Kingdom
+}}
+
+|match2={{MatchMaps
+|player1=DIMAGA  |player1race=z
+|player2=Symbol  |player2race=z
+|winner=2
+|map1win=1  |map1=Daybreak
+|map2win=2  |map2=Abyssal City
+|map3win=2  |map3=Cloud Kingdom}}
+
+|match3={{MatchMaps
+|player1=Snute  |player1race=z
+|player2=Symbol  |player2race=z
+|winner=1
+|map1win=1  |map1=Abyssal City
+|map2win=1  |map2=Cloud Kingdom}}
+
+|match4={{MatchMaps
+|player1=Mana  |player1race=p
+|player2=DIMAGA  |player2race=z
+|winner=1
+|map1win=1  |map1=Cloud Kingdom
+|map2win=1  |map2=Ohana
+}}
+
+|match5={{MatchMaps
+|player1=Symbol  |player1race=z
+|player2=MaNa  |player2race=p
+|winner=1
+|map1win=1  |map1=Metropolis
+|map2win=1  |map2=Daybreak}}
+
+}}
+
+{{Box|break|padding=4em}}
+
+==== {{HiddenAnchor|Group B}} ====
+''December 21, 2012 16:00 CET(GMT+1):''
+{{GroupTableStart| Group B |width=300px
+|preview=
+|lrthread=
+|vod=
+|interview=
+|review=
+}}
+{{GroupTableSlot| {{player|flag=kr|race=t|MarineKing}} |place=1|win_m=2|lose_m=0|win_g=4|lose_g=1|bg=up}}
+{{GroupTableSlot| {{player|flag=ru|race=t|Brat_OK}} |place=2|win_m=2|lose_m=1|win_g=4|lose_g=3|bg=up}}
+{{GroupTableSlot| {{player|flag=de|race=p|Socke}} |place=3|win_m=1|lose_m=2|win_g=3|lose_g=4|bg=down}}
+{{GroupTableSlot| {{player|flag=nl|race=z|Ret}} |place=4|win_m=0|lose_m=2|win_g=1|lose_g=4|bg=down}}
+{{GroupTableEnd}}
+
+{{MatchList
+|title=Group B Matches
+
+&lt;!-- When adding new match results please try to sort them chronologically, by moving the match you are editing above the unplayed matches. --&gt;
+
+|match1={{MatchMaps
+|player1=Ret  |player1race=z
+|player2=MarineKing  |player2race=t
+|winner=2
+|map1win=2  |map1=Entombed Valley
+|map2win=2  |map2=Ohana}}
+
+|match2={{MatchMaps
+|player1=Brat_OK  |player1race=t
+|player2=Socke  |player2race=p
+|winner=2
+|map1win=2  |map1=Entombed Valley
+|map2win=2  |map2=Cloud Kingdom}}
+
+|match3={{MatchMaps
+|player1=Socke  |player1race=p
+|player2=MarineKing  |player2race=t
+|winner=2
+|map1win=2  |map1=Ohana
+|map2win=1  |map2=Entombed Valley
+|map3win=2  |map3=Cloud Kingdom}}
+
+|match4={{MatchMaps
+|player1=Brat_OK  |player1race=t
+|player2=Ret  |player2race=z
+|winner=1
+|map1win=1  |map1=Ohana
+|map2win=2  |map2=Daybreak
+|map3win=1  |map3=Metropolis}}
+
+|match5={{MatchMaps
+|player1=Socke  |player1race=p
+|player2=Brat_OK  |player2race=t
+|winner=2
+|map1win=2  |map1=Ohana
+|map2win=2  |map2=Daybreak}}
+
+}}
+
+{{Box|break|padding=4em}}
+
+==== {{HiddenAnchor|Group C}} ====
+''December 21, 2012 18:00 CET(GMT+1):''
+{{GroupTableStart| Group C |width=300px
+|preview=
+|lrthread=
+|vod=
+|interview=
+|review=
+}}
+{{GroupTableSlot| {{player|flag=de|race=z|XlorD}} |place=1|win_m=2|lose_m=0|win_g=4|lose_g=0|bg=up}}
+{{GroupTableSlot| {{player|flag=fr|race=z|Stephano}} |place=2|win_m=2|lose_m=1|win_g=4|lose_g=3|bg=up}}
+{{GroupTableSlot| {{player|flag=kr|race=t|MMA}} |place=3|win_m=1|lose_m=2|win_g=2|lose_g=4|bg=down}}
+{{GroupTableSlot| {{player|flag=dk|race=p|BabyKnight}} |place=4|win_m=0|lose_m=2|win_g=1|lose_g=4|bg=down}}
+{{GroupTableEnd}}
+
+{{MatchList
+|title=Group C Matches
+
+&lt;!-- When adding new match results please try to sort them chronologically, by moving the match you are editing above the unplayed matches. --&gt;
+
+|match1={{MatchMaps
+|player1=Stephano  |player1race=z
+|player2=BabyKnight  |player2race=p
+|winner=1
+|map1win=2  |map1=Cloud Kingdom
+|map2win=1  |map2=Daybreak
+|map3win=1  |map3=Abyssal City}}
+
+|match2={{MatchMaps
+|player1=XlorD  |player1race=z
+|player2=MMA  |player2race=t
+|winner=1
+|map1win=1  |map1=TBD
+|map2win=1  |map2=TBD
+}}
+
+|match3={{MatchMaps
+|player1=XlorD&lt;ref&gt;XlorD received a win over Stephano after
+a disconnect in game 2.&lt;/ref&gt;  |player1race=z
+|player2=Stephano  |player2race=z
+|winner=1
+|map1win=1  |map1=Daybreak
+|map2win=1  |map2=Metropolis}}
+
+|match4={{MatchMaps
+|player1=MMA  |player1race=t
+|player2=BabyKnight  |player2race=p
+|winner=1
+|map1win=1  |map1=Entombed Valley
+|map2win=1  |map2=Cloud Kingdom
+}}
+
+|match5={{MatchMaps
+|player1=MMA  |player1race=t
+|player2=Stephano  |player2race=z
+|winner=2
+|map1win=2  |map1=Abyssal City
+|map2win=2  |map2=Ohana}}
+}}
+
+{{Box|break|padding=4em}}
+
+==== {{HiddenAnchor|Group D}} ====
+''December 21, 2012 20:30 CET(GMT+1):''
+{{GroupTableStart| Group D |width=300px
+|preview=
+|lrthread=
+|vod=
+|interview=
+|review=
+}}
+{{GroupTableSlot| {{player|flag=de|race=z|TLO}} |place=1|win_m=2|lose_m=0|win_g=4|lose_g=1|bg=up}}
+{{GroupTableSlot| {{player|flag=nl|race=p|Grubby}} |place=2|win_m=2|lose_m=1|win_g=4|lose_g=4|bg=up}}
+{{GroupTableSlot| {{player|flag=ua|race=t|Kas}} |place=3|win_m=1|lose_m=2|win_g=4|lose_g=5|bg=down}}
+{{GroupTableSlot| {{player|flag=kr|race=p|MC}} |place=4|win_m=0|lose_m=2|win_g=2|lose_g=4|bg=down}}
+{{GroupTableEnd}}
+
+{{MatchList
+|title=Group D Matches
+
+&lt;!-- When adding new match results please try to sort them chronologically, by moving the match you are editing above the unplayed matches. --&gt;
+
+|match1={{MatchMaps
+|player1=MC  |player1race=p
+|player2=Grubby  |player2race=p
+|winner=2
+|map1win=2  |map1=Cloud Kingdom
+|map2win=1  |map2=Ohana
+|map3win=2  |map3=Entombed Valley}}
+
+|match2={{MatchMaps
+|player1=Kas  |player1race=t
+|player2=TLO  |player2race=z
+|winner=2
+|map1win=2  |map1=Cloud Kingdom
+|map2win=1  |map2=Daybreak
+|map3win=2  |map3=Metropolis}}
+
+|match3={{MatchMaps
+|player1=Grubby  |player1race=p
+|player2=TLO  |player2race=z
+|winner=2
+|map1win=2  |map1=Daybreak
+|map2win=2  |map2=Cloud Kingdom}}
+
+|match4={{MatchMaps
+|player1=MC  |player1race=p
+|player2=Kas  |player2race=t
+|winner=2
+|map1win=1  |map1=Whirlwind
+|map2win=2  |map2=Daybreak
+|map3win=2  |map3=Cloud Kingdom}}
+
+|match5={{MatchMaps
+|player1=Grubby  |player1race=p
+|player2=Kas  |player2race=t
+|winner=1
+|map1win=2  |map1=Entombed Valley
+|map2win=1  |map2=Daybreak
+|map3win=1  |map3=Cloud Kingdom}}
+
+}}
+
+{{Box|end}}
+&lt;noinclude&gt;
+
+==References==
+&lt;references/&gt;&lt;/noinclude&gt;
