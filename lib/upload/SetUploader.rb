@@ -26,9 +26,9 @@ module StarcraftLiquipediaScrape
           if rs.fetch()[0] == 0
             rs = @con.prepare 'insert into games(id, series_index, event_id, play_date, map, p1_name, p1_race, p1_winner, p1_country, p2_name, p2_race, p2_winner, p2_country) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'
             rs.execute game_id, game_index, event_id, game_date, map_id, p1_name, p1_race, p1_winner, p1_country, p2_name, p2_race, p2_winner, p2_country
-            puts "Uploading #{game_id}, #{game_index}, #{event_id}, #{p1_name}, #{p2_name} - Success"
+            #puts "Uploading #{game_id}, #{game_index}, #{event_id}, #{p1_name}, #{p2_name} - Success"
           else 
-            puts "Uploading #{game_id}, #{game_index}, #{event_id}, #{p1_name}, #{p2_name} - Repeat"
+            #puts "Uploading #{game_id}, #{game_index}, #{event_id}, #{p1_name}, #{p2_name} - Repeat"
           end
         rescue StandardError => e
           puts "Uploading #{game_id}, #{game_index}, #{event_id}, #{p1_name}, #{p2_name} - Failed"
