@@ -17,7 +17,7 @@ module StarcraftLiquipediaScrape
 
         line = line.gsub(/ *\|/, "|").gsub(/\| */, "|").gsub(/&amp;nbsp;/, "")
 
-        #puts "     #{@status} #{line}"
+        ##puts "     #{@status} #{line}"
 
         if @status == "outside_all"
 
@@ -25,7 +25,7 @@ module StarcraftLiquipediaScrape
             next
           else
             @status = "inside_group_table"
-            puts "inside group table"
+            #puts "inside group table"
             next
           end
 
@@ -46,25 +46,25 @@ module StarcraftLiquipediaScrape
               country = $2
               name = $3
             else
-              puts "Error getting players"
+              #puts "Error getting players"
               next
             end
 
               name = name.gsub(/\|.*$/, "")
 
-              puts "save player #{name}, #{country}, #{race}"
+              #puts "save player #{name}, #{country}, #{race}"
               savePlayer(name, country, race)
             next
           elsif /\{\{MatchListStart/.match(line)
             @status = "inside_compact_matches"
-            puts "inside match compact list"
+            #puts "inside match compact list"
             next
           elsif /\{\{MatchList\|/.match(line) or /\{\{MatchList *$/.match(line)
             @status = "inside_matches"
-            puts "inside match list"
+            #puts "inside match list"
             next
           elsif /\{\{GameSet/.match(line)
-            puts "inside GameSet"
+            #puts "inside GameSet"
             if /\{\{GameSet\|\{\{.*\|([^\|]+)\}\}\|\{\{.*\|([^\|]+)\}\}\|map=([^\|]+)\|win=([0-9]+)/.match(line)
               @player1 = $1
               @player2 = $2
@@ -73,7 +73,7 @@ module StarcraftLiquipediaScrape
               makeGame()
               next
             else
-              puts "Not a real game"
+              #puts "Not a real game"
             end
           end
 
@@ -100,7 +100,7 @@ module StarcraftLiquipediaScrape
 
           if /|GroupTableSlot/.match(line)
             @status = "inside_a_match"
-            puts "inside a match"
+            #puts "inside a match"
           elsif /\}\}/.match(line)
             @status = "outside_all"
           end
@@ -138,7 +138,7 @@ module StarcraftLiquipediaScrape
             makeGame()
           elsif /\{\{[bB]ox\|/.match(line)
             @status = "outside_all"
-            puts "outside_all"
+            #puts "outside_all"
           end
 
           next
@@ -172,7 +172,7 @@ module StarcraftLiquipediaScrape
     def makeGame()
 
       if @player1 == nil or @player2 == nil 
-        puts "Player1 or Player2 nil, can't go forward"
+        #puts "Player1 or Player2 nil, can't go forward"
         return 
       end
 
@@ -180,7 +180,7 @@ module StarcraftLiquipediaScrape
       p2 = if @players[@player2] != nil then @players[@player2] else @players[@player2.downcase] end
 
       if p1 == nil or p2== nil 
-        puts "Unable to lookup player. #{@player1}, #{p1}, #{@player2}, #{p2}. Can't go forward"
+        #puts "Unable to lookup player. #{@player1}, #{p1}, #{@player2}, #{p2}. Can't go forward"
         return 
       end
 
@@ -197,7 +197,7 @@ module StarcraftLiquipediaScrape
           p1.score = @score1
           p2.score = @score2
         rescue
-          puts "Unable to parse scores!"
+          #puts "Unable to parse scores!"
           return
         end
       end
