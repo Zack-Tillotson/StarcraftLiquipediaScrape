@@ -17,7 +17,7 @@ module StarcraftLiquipediaScrape
 
         line = line.gsub(/ *\|/, "|").gsub(/\| */, "|").gsub(/&amp;nbsp;/, "")
 
-        ##puts "     #{@status} #{line}"
+        #puts "     #{@status} #{line}"
 
         if @status == "outside_all"
 
@@ -34,9 +34,10 @@ module StarcraftLiquipediaScrape
         if @status == "inside_group_table"
 
           if /\{\{GroupTableSlot/.match(line)
-              country = ""
-              race = ""
-              name = ""
+
+            country = ""
+            race = ""
+            name = ""
             if /\{\{player\|flag=([^\|]*)\|race=([^\|]*)\|([^\}]*)\}\}/.match(line)
               country = $1
               race = $2
@@ -49,17 +50,16 @@ module StarcraftLiquipediaScrape
               #puts "Error getting players"
               next
             end
-
-              name = name.gsub(/\|.*$/, "")
-
-              #puts "save player #{name}, #{country}, #{race}"
-              savePlayer(name, country, race)
+            name = name.gsub(/\|.*$/, "")
+            #puts "save player #{name}, #{country}, #{race}"
+            savePlayer(name, country, race)
             next
+
           elsif /\{\{MatchListStart/.match(line)
             @status = "inside_compact_matches"
             #puts "inside match compact list"
             next
-          elsif /\{\{MatchList\|/.match(line) or /\{\{MatchList *$/.match(line)
+          elsif /\{\{MatchList\|/.match(line) or /\{\{MatchList *($|&lt;!--)/.match(line)
             @status = "inside_matches"
             #puts "inside match list"
             next
