@@ -1,0 +1,29 @@
+body {
+  margin: 50px;
+  background-color: #ccc;
+  font-family: 'Inconsolata', 'sans-serif'
+}
+
+#header {
+  width: 960px;
+  margin: auto;
+  background-image(url('.png'));
+  font-size: 48px;
+}
+.graph {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#graph2 {
+  display: inline;
+  width: 49%;
+  float: left;
+}
+
+#graph3 {
+  display: inline;
+  width: 49%;
+  margin-left: 2%;
+  float: left;
+}

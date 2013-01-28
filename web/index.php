@@ -13,5 +13,6 @@
     <div class="graph" id="graph1"></div>
     <div class="graph" id="graph2"></div>
     <div class="graph" id="graph3"></div>
+    <div id="player-list"><?php include('player_list.php'); ?></div>
   </body>
 </html
