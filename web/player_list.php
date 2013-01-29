@@ -1,32 +1,16 @@
 <?php
-
-$listSize = isset($_GET['size']) ? $_GET['size'] : '99999';
-
-$curl = curl_init('http://zacherytillotson.com/sctrends/data/player_list.json.php');
-curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-$data_json = curl_exec($curl);
-$data = json_decode($data_json, true);
 ?>
-<table>
-  <thead>
-    <tr>
-      <td>Name</td>
-      <td>Country</td>
-      <td>Race</td>
-      <td>Win Count</td>
-      <td>Loss Count</td>
-      <td>Game Count</td>
-    </tr>
-  </thead>
-  <tbody>
-<?php foreach(array_slice($data, 0, $listSize) as $row) { ?>
-  <tr>
-    <td><?php print $row["name"]; ?></td>
-    <td><?php print $row["country"]; ?></td>
-    <td><?php print $row["race"]; ?></td>
-    <td><?php print $row["win_count"]; ?></td>
-    <td><?php print $row["loss_count"]; ?></td>
-    <td><?php print $row["win_count"] + $row["loss_count"]; ?></td>
-<?php } ?>
-  </tbody>
-</table>
+<html>
+  <head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript" src="/resources/highcharts.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>Player List</h1>
+    <div id="player-list">
+      <?php include('_player_list.php'); ?>
+    </div>
+  </body>
+</html

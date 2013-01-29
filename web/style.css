@@ -27,3 +27,15 @@ body {
   margin-left: 2%;
   float: left;
 }
+
+table {
+  border-collapse: collapse;
+}
+
+table tr.win {
+  background-color: #ddfd96;
+}
+
+table tr.loss {
+  background-color: #ff6666;
+}
