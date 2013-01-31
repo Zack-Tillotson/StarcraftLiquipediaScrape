@@ -31,15 +31,16 @@ module StarcraftLiquipediaScrape
     def scrapeEndpoints(endpoints)
       endpoints.each_pair do |id, url|
         puts "Endpoint #{id} #{url}"
-        doc = Nokogiri::HTML(open(url))
-        txt = doc.xpath("//textarea/text()").first().to_s 
-        aFile = File.open("data/#{id}.txt", 'w')
-        begin 
-          aFile.syswrite(txt)
-        ensure
-          aFile.close
+        if !File.exists?("data/#{id}.txt")
+          doc = Nokogiri::HTML(open(url))
+          txt = doc.xpath("//textarea/text()").first().to_s 
+          aFile = File.open("data/#{id}.txt", 'w')
+          begin 
+            aFile.syswrite(txt)
+          ensure
+            aFile.close
+          end
         end
-            
       end
     end
 
@@ -54,7 +55,6 @@ module StarcraftLiquipediaScrape
       input = IO.read("db.txt")
       return Hash[*input.split(/\s*[\n=]\s*/)]
     end
-
 
   end
 end

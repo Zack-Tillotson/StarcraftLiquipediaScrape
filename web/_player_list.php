@@ -1,8 +1,8 @@
 <?php
 
-$listSize = isset($PLAYER_LIST_SIZE) ? $PLAYER_LIST_SIZE : '99999';
+$listSize = (isset($PLAYER_LIST_SIZE) ? $PLAYER_LIST_SIZE : '99999');
 
-$url = "http://zacherytillotson.com/sctrends/data/player_list.json.php";
+$url = "http://www.starcrafttrends.com/data/player_list.json.php";
 $curl = curl_init($url);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $data_json = curl_exec($curl);

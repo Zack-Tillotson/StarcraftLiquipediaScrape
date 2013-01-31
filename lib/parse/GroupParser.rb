@@ -147,7 +147,7 @@ module StarcraftLiquipediaScrape
 
       end
 
-      @games
+      @games.select { |k, v| v.p2.name != "BYE" }
 
     end
 

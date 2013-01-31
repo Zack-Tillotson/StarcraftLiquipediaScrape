@@ -30,11 +30,11 @@ module StarcraftLiquipediaScrape
     end
 
     def race=(v)
-      @race = v
+      @race = v.strip
     end
 
     def name=(v)
-      @name= v
+      @name= v.strip
     end
 
     def score=(v)
@@ -42,7 +42,7 @@ module StarcraftLiquipediaScrape
     end
 
     def flag=(v)
-      @flag= v
+      @flag= v.strip
     end
 
     def to_s()

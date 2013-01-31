@@ -28,14 +28,59 @@ body {
   float: left;
 }
 
-table {
-  border-collapse: collapse;
+#games-list {
+  width: 90%
+  margin: 15px auto;
 }
 
-table tr.win {
+#games-list table {
+  border-collapse: collapse;
+  font-size: 20px;
+}
+
+#games-list table tr td.win {
   background-color: #ddfd96;
 }
 
-table tr.loss {
+#games-list table tr td.loss {
   background-color: #ff6666;
+}
+
+#games-list table tr td.result{
+  width: 5%;
+  text-align: center;
+}
+
+#games-list table tr td.name {
+  width: 55%;
+}
+
+#games-list table tr td.event{
+  width: 20%;
+}
+
+#games-list table tr td.date {
+  width: 20%;
+}
+
+.race-icon {
+  width: 15px;
+  height: 15px;
+  border-radius: 4px;
+  font-weight: bolder;
+  padding: 3px;
+  margin: 5px;
+}
+
+.race-icon.z {
+  background-color: blue;
+  color: grey;
+}
+
+.race-icon.t {
+  background-color: red;
+}
+
+.race-icon.p {
+  background-color: green;
 }

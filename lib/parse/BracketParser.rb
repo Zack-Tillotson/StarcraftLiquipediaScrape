@@ -52,6 +52,8 @@ module StarcraftLiquipediaScrape
 
       end
 
+      @games = @games.select{ |k, v| v.p2.name != "BYE"}
+
       @games
 
     end
@@ -77,7 +79,7 @@ module StarcraftLiquipediaScrape
           pev.scan(/^R[0-9]+[A-Z][0-9]+(.*)=(.*)$/) do |attr, val|
 
             attr = "name" if attr == nil or attr.length() == 0
-            val = val.gsub(/' .*/, "'").gsub("'", "")
+            val = val.gsub(/' .*/, "'").gsub("'", "").gsub(/&lt;!--.*--&gt;/, "").strip
 
             @games[gameno].set_attr(playerno, attr, val)
 
