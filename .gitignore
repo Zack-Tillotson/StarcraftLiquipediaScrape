@@ -4,3 +4,4 @@
 *.tmp
 db.txt
 data/*.txt
+_mysql_connect.php
