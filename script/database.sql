@@ -2,6 +2,8 @@
 update games g inner join endpoints e on e.id = g.event_id set g.play_date = e.date;
 -- Update the endpoints dates from csv
 for LINE in `cat data/endpoint-dates.csv`; do echo $LINE; ID=`echo $LINE | awk -F',' '{print $1}'`; VAL=`echo $LINE | awk -F',' '{print $2}'`; mysql -h -u --password= -e "update endpoints set date = str_to_date('$VAL', '%Y-%m') where id = '$ID'"; done;
+-- Update the endpoints names from csv
+C=`wc -l data/endpoint-names.csv | awk '{print $1}'`; for((i=1;i<=$C;i++)); do LINE="`head -$i data/endpoint-names.csv | tail -1`"; echo $LINE; ID=`echo $LINE | awk -F',' '{print $1}'`; VAL="`echo $LINE | awk -F',' '{print $2}'`"; mysql -h -u --password= -e "update endpoints set name = '$VAL' where id = '$ID'"; done;
 
 -- Get the win and loss count for each month for each race
 select a.month, a.race, a.win_cnt, b.loss_cnt from (select month(play_date) month, p1_race race, count(*) win_cnt from games where p1_race not in ("", "r") group by p1_race, month(play_date) order by 1 asc, 2 asc) a, (select month(play_date) month, p2_race race, count(*) loss_cnt from games where p2_race not in ("", "r") group by p2_race, month(play_date) order by 1 asc, 2 asc) b where a.month = b.month and a.race = b.race order by 1 asc, 2 asc;

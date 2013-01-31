@@ -46,6 +46,7 @@ module StarcraftLiquipediaScrape
         rescue StandardError => e
           puts "Deleting BYE games failed"
           puts e
+        end
         @con.close
       end
     end
@@ -71,6 +72,9 @@ module StarcraftLiquipediaScrape
       if set.p1.flag == 'poland' then set.p1.flag = 'pl' end
       if set.p1.flag == 'ukraine' then set.p1.flag = 'uk' end
       if set.p1.flag == 'peru' then set.p1.flag = 'pe' end
+      if set.p1.flag == 'canada' then set.p1.flag = 'ca' end
+      if set.p1.flag == 'finland' then set.p1.flag = 'fi' end
+      if set.p1.flag == 'taiwan' then set.p1.flag = 'tw' end
       if set.p2.flag == 'china' then set.p2.flag = 'cn' end
       if set.p2.flag == 'serbia' then set.p2.flag = 'se' end
       if set.p2.flag == 'switzerland' then set.p2.flag = 'ch' end
