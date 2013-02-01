@@ -7,7 +7,7 @@ curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $data_json = curl_exec($curl);
 $data = json_decode($data_json, true);
 ?>
-<table>
+<table class="sortable">
   <thead>
     <tr>
       <td class="result">Result</td>
@@ -33,8 +33,8 @@ $data = json_decode($data_json, true);
         <?php print $row["p1_name"]; ?>
       </td>
     <?php } ?>
-      <td class="date"><?php print $row["play_date"]; ?></td>
       <td class="event"><?php print $row["event_id"]; ?></td>
+      <td class="date"><?php print $row["date"]; ?></td>
     </tr>
 <?php } ?>
   </tbody>

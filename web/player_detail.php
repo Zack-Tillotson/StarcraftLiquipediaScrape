@@ -8,6 +8,7 @@ $player_id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_STRING);
     <script src="graph.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="/resources/sorttable.js"></script>
     <?php include '_google_analytics.php'; ?>
   </head>
   <body>
@@ -16,7 +17,7 @@ $player_id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_STRING);
     <div id="games-graph"></div>
     <div id="games-list"><?php include '_player_detail_games.php'; ?></div>
     <script type="text/javascript">
-      makeGraphRaceOverTime('games-graph', '<?php print $player_id; ?> Matches vs Each Race', '3 Month Moving Average, Source: <a href="http://wiki.liquipedia.net/starcraft2/Premier_Tournaments">Liquipedia, 2012 Premier Tournaments</a>', "http://www.starcrafttrends.com/data/player_detail_allgraph.json.php?id=<?php print $player_id; ?>");
+      makeGraphRaceWinCountsOverTime('games-graph', '<?php print $player_id; ?> Matches vs Each Race', '3 Month Moving Average, Source: <a href="http://wiki.liquipedia.net/starcraft2/Premier_Tournaments">Liquipedia, 2012 Premier Tournaments</a>', "http://www.starcrafttrends.com/data/player_detail_allgraph.json.php?id=<?php print $player_id; ?>");
     </script>
   </body>
 </html
