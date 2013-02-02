@@ -24,13 +24,13 @@ $data = json_decode($data_json, true);
       <td class="name">
         <span class="country"><img src="resources/<?php print $row["p2_country"]; ?>.png"></span>
         <span class="race race-icon <?php print $row["p2_race"]; ?>"><?php print $row["p2_race"]; ?></span>
-        <?php print $row["p2_name"]; ?>
+        <a href="player_detail.php?id=<?php print $row["p2_name"]; ?>"><?php print $row["p2_name"]; ?></a>
       </td>
     <?php } else { ?>
       <td class="name">
         <span class="country"><img src="resources/<?php print $row["p1_country"]; ?>.png"></span>
         <span class="race race-icon <?php print $row["p1_race"]; ?>"><?php print $row["p1_race"]; ?></span>
-        <?php print $row["p1_name"]; ?>
+        <a href="player_detail.php?id=<?php print $row["p1_name"]; ?>"><?php print $row["p1_name"]; ?></a>
       </td>
     <?php } ?>
       <td class="event"><?php print $row["event_id"]; ?></td>

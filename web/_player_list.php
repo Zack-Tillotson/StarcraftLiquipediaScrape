@@ -7,6 +7,7 @@ $curl = curl_init($url);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $data_json = curl_exec($curl);
 $data = json_decode($data_json, true);
+$odd = true;
 ?>
 <table class="sortable">
   <thead>
@@ -20,12 +21,12 @@ $data = json_decode($data_json, true);
   </thead>
   <tbody>
 <?php foreach(array_slice($data, 0, $listSize) as $row) { ?>
-  <tr>
-    <td><a href="player_detail.php?id=<?php print $row['name']; ?>"><?php print $row["name"]; ?></a></td>
-    <td><span class="race-icon <?php print $row["race"]; ?>"><?php print $row["race"]; ?></span></td>
-    <td><img src="/resources/<?php print $row["country"]; ?>.png" /></td>
-    <td><?php print $row["win_count"]; ?></td>
-    <td><?php print $row["loss_count"]; ?></td>
+<tr <?php if($odd = !$odd) { ?>class="odd"<?php } ?>>
+    <td class="name"><a href="player_detail.php?id=<?php print $row['name']; ?>"><?php print $row["name"]; ?></a></td>
+    <td class=-"race"><span class="race-icon <?php print $row["race"]; ?>"><?php print $row["race"]; ?></span></td>
+    <td class="country"><img src="/resources/<?php print $row["country"]; ?>.png" /></td>
+    <td class="wins"><?php print $row["win_count"]; ?></td>
+    <td class="wins"><?php print $row["loss_count"]; ?></td>
 <?php } ?>
   </tbody>
 </table>

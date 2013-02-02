@@ -7,5 +7,7 @@ curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $data_json = curl_exec($curl);
 $data = json_decode($data_json, true);
 ?>
-<div class="country">Country: <?php print $data[0]['country']; ?></div>
-<div class="race">Race: <?php print $data[0]['race']; ?></div>
+Player: 
+<span class="name"><?php print $id; ?></span>
+<span class="country"><img src="resources/<?php print $data[0]['country']; ?>.png" height=20 /></span>
+<span class="race-icon <?php print $data[0]['race']; ?>"><?php print $data[0]['race']; ?></span>

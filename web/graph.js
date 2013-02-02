@@ -96,9 +96,9 @@ function makeGraphRaceWinCountsOverTime(container, chartName, chartSubtitle, dat
           }]
       },
       colors: [
-          '#F2B8B8',
-          '#B8B8F2',
-          '#B8F2B8',
+          '#ccc',
+          '#ccc',
+          '#ccc',
           '#d81417',
           '#0099FF',
           '#2a9c3b'
